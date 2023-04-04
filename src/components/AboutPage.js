@@ -24,13 +24,14 @@ const AboutPage = () => {
 
     { 
         name: "Brandon Bedolla",
-        picture: Brandon,  
+        // picture: Brandon,  
+        text: "As someone with personal experience caring for a loved one with special needs, I found myself deeply moved when Joshua, the founder of CS for Special Education, spoke passionately about the club's mission in front of my class. The desire to aid and uplift those with special needs has always been close to my heart, and becoming a member of this club felt like a natural step towards fulfilling that goal. As someone with a passion for computer science, I believe that by collaborating with CS for Special Education, we can develop innovative approaches that incorporate creativity and intelligence to better serve all students in the program. Ultimately, my goal is to contribute my skills and knowledge towards building a more inclusive and equitable future for individuals with special needs."
     },
 
-    // {
-    //     name: "Robel William",
-    //     text: "I will change this later",
-    // },
+    {
+        name: "Robel Abraham",
+        text: "CS for Special Education is a club I found on posters around the school and was immediately interested; I decided to give it a shot. I joined this club because I am passionate about helping others, and I feel fulfilled in sharing my knowledge. I wish to make a difference in these students with special needs by giving them a skill that can be invaluable in today’s world and can help provide them with future opportunities. Overall, joining this club could be a way for me to make a positive impact on society and contribute to a meaningful cause. I have high hopes for the future of this program.",
+    },
 
     {
         name: "Richard Jang",
@@ -38,15 +39,23 @@ const AboutPage = () => {
         text: "I joined the CS for Special Education program in order to help people understand and appreciate computer science. Computer science has always acted as a mental playground where I could express my creativity. It has also allowed me to think in many different ways. To solve real world problems, computer scientists often have to think in a different way, and learning computer science has allowed me to think outside the box more effectively. I want to assist students on their journey through computer science, assist learners in the field of computer science, and help them discover their own path.",
     },
 
-    // {
-    //     name: "Jayadeep Velugapadi",
-    //     text: "I will fix his name and change this later",
-    // },
+    {
+        name: "William Turner",
+        picture: null,
+        text: "I became a member of CS for special education after noticing a poster in the hall for it. Seeing the poster made me think about how Ive had the priviledge of having access to tons of computer science resources to learn from and I realized that I wanted to make that same journey accessable to everyone. I decided I would join CS for special education so that I could further the CS community and make resources that anybody could learn from regardless of learning disabilities. Another great reason I saw to joining this club is to allow myself to polish up on my own skills, understand everything fully, and fill cracks in my knowledge.",
+    },
 
-    // {
-    //     name: "Namay Saini",
-    //     text: "I will change this later",
-    // },
+
+
+    {
+        name: "Jayadeep Velugapadi",
+        text: "With over three years of experience in computer science, I am passionate about teaching the subject to individuals with special educational needs. Unfortunately, many learners with disabilities do not have access to computer science education, which puts them at a disadvantage in today's technology-driven world. I am motivated to bridge this gap and make computer science education more accessible to these learners, so that they can develop valuable skills that will help them succeed. By joining CS for Special Education, I hope to use my knowledge and expertise to empower students and make a positive impact in their lives        ",
+    },
+
+    {
+        name: "Namay Saini",
+        text: "My decision to join Computer Science for Special Education stemmed from my genuine passion for the field and my love for tutoring others. I believe that everyone should have access to quality education, regardless of their background or abilities. I find great joy in sharing my knowledge and helping others overcome their learning challenges. My commitment to special education and computer science is driven by a desire to make a positive impact in the lives of students who may face additional obstacles in their learning journey.",
+    },
 
     // {
     //     name: "Sara Vaughan",
@@ -59,10 +68,12 @@ const AboutPage = () => {
         <div className='page-wrapper'>
 
             <div style = {{
-                paddingLeft: "10vw",
-                paddingTop: "5vh",
-                paddingBottom: "5vh",
-            }} className='about=title'>
+                marginTop: "0",
+                // paddingLeft: "10vw",
+                width: "100vw",
+                paddingTop: "10vh",
+                paddingBottom: "10vh",
+            }} className='about-title'>
                 <h1> Our Team </h1>
             </div>
 
@@ -71,16 +82,18 @@ const AboutPage = () => {
                 flexDirection: "row",
                 flexWrap: "wrap",
                 paddingLeft: "10vw",
+                paddingTop: "10vh",
                 paddingRight: "10vw",
+                paddingBottom: "10vh"
             }}> 
-                { content.map(person => <Card style = {{
+                { content.map(person => <Card border = "primary" style = {{
                     margin: "1rem",
                 }}>
-                    <Card.Header style = {{fontSize: "1.5rem"}}> <b> {person.name} </b> </Card.Header>
+                    <Card.Header  style = {{fontSize: "1.5rem"}} > <b> {person.name} </b> </Card.Header>
                     <Card.Body>
                         {person.picture != null ? <Card.Img src = {person.picture}></Card.Img> : ""}
-                        <Card.Text>
-                            {person.text}
+                        <Card.Text> 
+                            <p style = {{fontSize: "1.2vw"}} > {person.text} </p>
                         </Card.Text>
                     </Card.Body>
                 </Card>)

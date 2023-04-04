@@ -1,9 +1,7 @@
 import './HomePage.css'
 import {useState} from 'react'
 import landingBackground from './background.png'
-import facebookLogo from './f_logo_RGB-Blue_58.png'
-import twitterLogo from './twitter.png'
-import instagramLogo from './instagram.png'
+
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom'
@@ -26,7 +24,7 @@ const HomePage = () => {
                             </div>
                             <div className='landing-wrapper'>
                                 <img 
-                                    style={{width: "100%", margin: "0"}}
+                                    style={{width: "100vw", margin: "0"}}
                                     src={landingBackground}
                                 />
                             </div>
@@ -49,7 +47,7 @@ const HomePage = () => {
 
                             <div style = {{display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "center", backgroundColor: "#FFEEDC"}}>
 
-                            <Card style={{ width: '18rem', margin: "1rem"}}>
+                            <Card style={{ width: '18rem', margin: "1rem"}} className="content-cards">
                             <Card.Body>
                                 <Card.Title>Visual Learning</Card.Title>
                                 <Card.Text>
@@ -58,7 +56,7 @@ const HomePage = () => {
                             </Card.Body>
                             </Card>
 
-                            <Card style={{ width: '18rem', margin: "1rem" }}>
+                            <Card style={{ width: '18rem', margin: "1rem" }} className="content-cards">
                             <Card.Body>
                                 <Card.Title> Individual Attention </Card.Title>
                                 <Card.Text>
@@ -67,7 +65,7 @@ const HomePage = () => {
                             </Card.Body>
                             </Card>
 
-                            <Card style={{ width: '18rem', margin: "1rem" }}>
+                            <Card style={{ width: '18rem', margin: "1rem" }} className="content-cards">
                             <Card.Body>
                                 <Card.Title>Custom Pace</Card.Title>
                                 <Card.Text>
@@ -91,28 +89,7 @@ const HomePage = () => {
                                 <Button variant='outline-primary' size='lg' as = {Link} to = {"/classes"} > Click Here ⇒ </Button>
                             </div>
 
-                            <div className="footer-wrapper">
-                                <div className="footer-description">
-                                    <p> 
-                                    CS for Special Ed. is on a mission to give everyone an opportunity to learn Computer Science.                                    </p>    
-                                </div>
-                                <div className="footer-main">
-                                    <h1> Main </h1>
-                                    <h2> Home </h2> 
-                                    <h2> About </h2>
-                                    <h2> Classes </h2>
-                                    <h2> Contact </h2>
-                                </div>
-        
-                               <div className="footer-main">
-                                <h1> Social Media </h1>
-                                    <div className="footer-socials"> 
-                                        <a href='https://twitter.com/csforspecialedu'> <img style = {{width: "2vw", height: "auto", marginLeft: "0.5vw", marginRight: "0.5vw"}} src={twitterLogo}/> </a>
-                                        <a href='https://www.facebook.com/profile.php?id=100090126751545'> <img style = {{width: "2vw", height: "auto", marginLeft: "0.5vw", marginRight: "0.5vw"}} src={facebookLogo}/> </a>
-                                        <a href='https://www.instagram.com/cs4sped/'> <img style = {{width: "2vw", height: "auto", marginLeft: "0.5vw", marginRight: "0.5vw"}} src={instagramLogo}/> </a>
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 )   

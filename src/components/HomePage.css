@@ -100,8 +100,9 @@ padding-left: 10rem;
 /* About styles */
 
 .about-wrapper {
-    background-color: #171b60;
+    background-image: radial-gradient(#171b60, #393d97);
     display: flex;
+    box-shadow: inset 0 0 2vw #000;
     flex-direction: row;
     width: 100vw;
     padding-bottom: 10vh;
@@ -110,7 +111,7 @@ padding-left: 10rem;
 }
 
 .about-wrapper * {
-    background-color: #171b60;
+    background-color: transparent;
     color: white;
     padding-left: 5vw;
     padding-right: 5vw;
@@ -275,66 +276,6 @@ padding-left: 10rem;
 
 /* Footer Styles */
 
-.footer-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    background-color: #313d5a;
-    width: 100vw;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    align-items: center;
-}
-
-.footer-wrapper * {
-    background-color: #313d5a;
-    color: white;
-    font-weight: lighter;
-}
-
-.footer-wrapper .footer-description p {
-    font-size: 1.3rem;
-    line-height: 150%;
-    text-align: center;
-    font-weight: normal;
-    width: 30vw;
-    padding-right: 10vw;
-}
-
-
-
-.footer-wrapper .footer-main {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 50%;
-}
-
-.footer-wrapper .footer-main h1 {
-    font-size: 2rem;
-}
-
-.footer-wrapper .footer-main h2 {
-    font-size: 1rem;
-    font-weight: lighter;
-    margin-top: 0.75rem;
-}
-
-.footer-wrapper .footer-services {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-
-.footer-wrapper .footer-socials {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 50%;
-}
-
 /* Copyright styles */
 
 .copyright-wrapper {
@@ -350,4 +291,8 @@ padding-left: 10rem;
     background-color: black;
     color: white;
     font-size: 1rem;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
