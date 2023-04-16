@@ -14,7 +14,7 @@ const HomePage = () => {
                             <div style={{position: 'absolute', backgroundColor: "transparent", top: "20vh", width: "30vw", left: "5vw",}}>
 
                             <div style={{backgroundColor: "transparent", fontSize: "2.3rem", fontWeight:"bold"}}>
-                                Computer Science for Special Education
+                                Inclusive Computing Initiative
                             </div>
 
                             
