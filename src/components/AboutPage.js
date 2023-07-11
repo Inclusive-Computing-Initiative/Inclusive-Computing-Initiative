@@ -73,6 +73,8 @@ const AboutPage = () => {
                 width: "100vw",
                 paddingTop: "10vh",
                 paddingBottom: "10vh",
+                backgroundImage: "radial-gradient(#ffeedc, #ffeadc)",
+                boxShadow: "inset 0 0 1vw #000",
             }} className='about-title'>
                 <h1> Our Team </h1>
             </div>

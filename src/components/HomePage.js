@@ -36,7 +36,7 @@ const HomePage = () => {
                                         <h2> Who are we? </h2>
                                     </div>
                                     <div className="about-content">
-                                        <p> Computer Science for Special Education is a Project started by High School students at Allen High School to increase knowledge of Computer Science among students with Special Needs. We beleive that everyone deserves an equal opportunity to learn and create. </p>
+                                        <p> The Inclusive Computing Initiative is a Project started by High School students at Allen High School to increase knowledge of Computer Science among students with Special Needs. We beleive that everyone deserves an equal opportunity to learn and create. </p>
 			                        </div>
                                 </div>
                             </div>
@@ -49,7 +49,7 @@ const HomePage = () => {
 
                             <Card style={{ width: '18rem', margin: "1rem"}} className="content-cards">
                             <Card.Body>
-                                <Card.Title>Visual Learning</Card.Title>
+                                <Card.Title className="text-center">Visual Learning</Card.Title>
                                 <Card.Text>
                                 Many Special Needs children are visual learners. That's why our curriculum focuses on represeting topics in a tangible and engaging way to ensure that every student sufficiently understands the topics.
                                 </Card.Text>
@@ -58,7 +58,7 @@ const HomePage = () => {
 
                             <Card style={{ width: '18rem', margin: "1rem" }} className="content-cards">
                             <Card.Body>
-                                <Card.Title> Individual Attention </Card.Title>
+                                <Card.Title className="text-center"> Individual Attention </Card.Title>
                                 <Card.Text>
                                 We ensure that every student gets individual attentionefrom our highly qualified teachers. This attention is necessary to create a safe and welcoming environment and to understand and care to the needs of each and every student.
                                 </Card.Text>
@@ -67,7 +67,7 @@ const HomePage = () => {
 
                             <Card style={{ width: '18rem', margin: "1rem" }} className="content-cards">
                             <Card.Body>
-                                <Card.Title>Custom Pace</Card.Title>
+                                <Card.Title className="text-center">Custom Pace</Card.Title>
                                 <Card.Text>
                                 Is the student eager to learn, or not? Do they grasp concepts quickly, or do they need some time to think over? Either way, we can accomodate. We allow each student to go at whatever pace they are comfortable in while still challenging them to improve.                                </Card.Text>
                             </Card.Body>

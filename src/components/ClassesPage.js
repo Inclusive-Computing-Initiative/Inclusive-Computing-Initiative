@@ -22,6 +22,7 @@ const ClassesPage = () => {
                 width: "100vw",
                 paddingTop: "10vh",
                 paddingBottom: "10vh",
+                boxShadow: "inset 0 0 1vw #000",
             }} className='classes-title'>
                 <h1> Upcoming Classes </h1>
             </div>
