@@ -95,7 +95,7 @@ const AboutPage = () => {
                     <Card.Body>
                         {person.picture != null ? <Card.Img src = {person.picture}></Card.Img> : ""}
                         <Card.Text> 
-                            <p style = {{fontSize: "1.2vw"}} > {person.text} </p>
+                            <p style = {{fontSize: "1.4rem"}} > {person.text} </p>
                         </Card.Text>
                     </Card.Body>
                 </Card>)

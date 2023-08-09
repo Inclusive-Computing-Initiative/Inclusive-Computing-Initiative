@@ -5,26 +5,29 @@ import landingBackground from './background.png'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom'
+
+
 const HomePage = () => {
 	
                 return(
-                        <div>
+                    <div>
 			            <div className="home-wrapper">
 
                             <div style={{position: 'absolute', backgroundColor: "transparent", top: "20vh", width: "30vw", left: "5vw",}}>
 
-                            <div style={{backgroundColor: "transparent", fontSize: "2.3rem", fontWeight:"bold"}}>
-                                Inclusive Computing Initiative
-                            </div>
+                                <div class="title" style={{position: "relative", width: "95vw", wordWrap: "break-word", backgroundColor: "transparent", fontWeight:"bold"}}>
+                                    Inclusive Computing Initiative
+                                </div>
 
-                            
-                            <div style={{backgroundColor: "transparent", fontSize: "1.5rem", top: "27vh", width: "40vw", left: "5vw"}}>
-                                <i style={{backgroundColor: "transparent"}}>Everyone</i> deserves to learn and create.
+                                
+                                <div class="subtitle" style={{position: "relative", width: "95vw", wordWrap: "break-word", backgroundColor: "transparent"}}>
+                                    <i style={{backgroundColor: "transparent"}}>Everyone</i> deserves to learn and create.
+                                </div>
+
                             </div>
-                            </div>
+                        
                             <div className='landing-wrapper'>
                                 <img 
-                                    style={{width: "100vw", margin: "0"}}
                                     src={landingBackground}
                                 />
                             </div>
@@ -33,7 +36,7 @@ const HomePage = () => {
 
                                 <div className="about-left">
                                     <div className="about-title">
-                                        <h2> Who are we? </h2>
+                                        <p> Who are we? </p>
                                     </div>
                                     <div className="about-content">
                                         <p> The Inclusive Computing Initiative is a Project started by High School students at Allen High School to increase knowledge of Computer Science among students with Special Needs. We beleive that everyone deserves an equal opportunity to learn and create. </p>
@@ -43,9 +46,9 @@ const HomePage = () => {
 
                             <div style = {{display: "flex", width: "100vw", paddingTop: "5vw", paddingBottom: "5vw", flexDirection: "column", alignItems: "center", backgroundColor: "#FFEEDC"}}>
 
-                            <h1 style = {{marginBottom: "5vw", backgroundColor: "#FFEEDC"}}> Our Approach </h1>
+                            <h1 style = {{marginTop: "7vw", backgroundColor: "#FFEEDC"}}> Our Approach </h1>
 
-                            <div style = {{display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "center", backgroundColor: "#FFEEDC"}}>
+                            <div style = {{display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "center", backgroundColor: "#FFEEDC", paddingTop: "5vh", paddingBottom: "5vh"}}>
 
                             <Card style={{ width: '18rem', margin: "1rem"}} className="content-cards">
                             <Card.Body>

@@ -15,25 +15,27 @@ import './Navigationbar.css'
 const Footer = () => {
     return (
         <div className="footer-wrapper">
+
             <div className="footer-description">
                 <p> 
-                CS for Special Ed. is on a mission to give everyone an opportunity to learn Computer Science.                                    </p>    
+                The Inclusive Computing Initiative is on a mission to give everyone an opportunity to learn Computer Science.                                    </p>    
             </div>
+
             <div className="footer-main">
-          <Nav style={{dispay: "flex", flexDirection: "column"}}>
-            <Nav.Link as = {Link} to = {"/"} className = "px-4">Home</Nav.Link>
-            <Nav.Link as = {Link} to = {"/about"} className = "px-4">About</Nav.Link>
-            <Nav.Link as = {Link} to = {"/classes"} className = "px-4">Classes</Nav.Link>
-            <Nav.Link as = {Link} to = {"/contact"} className = "px-4">Contact</Nav.Link>
-          </Nav>
-        </div>
+                <Nav style={{dispay: "flex", flexDirection: "column", alignItems: "center"}}>
+                    <Nav.Link style={{color: "white", fontWeight:"bold"}} as = {Link} to = {"/"} className = "px-4">Home</Nav.Link>
+                    <Nav.Link style={{color: "white", fontWeight:"bold"}} as = {Link} to = {"/about"} className = "px-4">About</Nav.Link>
+                    <Nav.Link style={{color: "white", fontWeight:"bold"}} as = {Link} to = {"/classes"} className = "px-4">Classes</Nav.Link>
+                    <Nav.Link style={{color: "white", fontWeight:"bold"}} as = {Link} to = {"/contact"} className = "px-4">Contact</Nav.Link>
+                </Nav>
+            </div>
 
             <div className="footer-main">
             <h1> Social Media </h1>
                 <div className="footer-socials"> 
-                    <a href='https://twitter.com/csforspecialedu'> <img style = {{width: "2vw", height: "auto", marginLeft: "0.5vw", marginRight: "0.5vw"}} src={twitterLogo}/> </a>
-                    <a href='https://www.facebook.com/profile.php?id=100090126751545'> <img style = {{width: "2vw", height: "auto", marginLeft: "0.5vw", marginRight: "0.5vw"}} src={facebookLogo}/> </a>
-                    <a href='https://www.instagram.com/cs4sped/'> <img style = {{width: "2vw", height: "auto", marginLeft: "0.5vw", marginRight: "0.5vw"}} src={instagramLogo}/> </a>
+                    <a href='https://twitter.com/csforspecialedu'> <img style = {{height: "auto", marginLeft: "0.5vw", marginRight: "0.5vw"}} src={twitterLogo}/> </a>
+                    <a href='https://www.facebook.com/profile.php?id=100090126751545'> <img style = {{height: "auto", marginLeft: "0.5vw", marginRight: "0.5vw"}} src={facebookLogo}/> </a>
+                    <a href='https://www.instagram.com/cs4sped/'> <img style = {{height: "auto", marginLeft: "0.5vw", marginRight: "0.5vw"}} src={instagramLogo}/> </a>
                 </div>
             </div>
         </div>

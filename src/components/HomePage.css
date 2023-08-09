@@ -2,13 +2,20 @@
 
 /* Global styles */
 
-
-
 .home-wrapper {
     height: 100%;
     width: 100%;
     display: grid;
     background-color: white;
+    
+    --titlebig: 2.5rem;
+    --subbig: 2rem;
+
+    --titlemed: 2rem;
+    --submed: 1.5rem;
+
+    --titlesmall: 1.5rem;
+    --subsmall: 1rem;
 }
 
 .home-wrapper * {
@@ -16,9 +23,19 @@
     background-color: white;
 }
 
+
+
 /* Landing styles */
 
+.home-wrapper .title {
+    font-size: var(--titlebig);
+}
+.home-wrapper .subtitle {
+    font-size: var(--subbig);
+}
+
 .landing-wrapper {
+    overflow: hidden;
 }
 
 .landing-wrapper .landing-title {
@@ -78,8 +95,10 @@ padding-left: 10rem;
     font-size: 1.5vw;
 }
 
-.landing-wrapper .background-image img {
-    width: 50vw;
+.landing-wrapper img {
+    width: 100%;
+    height: auto;
+    min-width: 600px;
 }
 
 /* picture styles */
@@ -131,7 +150,7 @@ padding-left: 10rem;
 }
 
 .about-content {
-    font-size: 1.3rem;
+    font-size: var(--submed);
     margin-top: 2vh;
     font-style: bold;
     text-align: center;
@@ -143,7 +162,7 @@ padding-left: 10rem;
     color: white;
     text-align: center;
     font-weight: bolder;
-    font-size: 2rem;
+    font-size: var(--titlemed);
 }
 
 /* What we do styles */
@@ -295,4 +314,41 @@ padding-left: 10rem;
 
 .card {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+@media screen and (max-width: 1000px) {
+    .home-wrapper .title {
+        font-size: var(--titlemed);
+    }
+    .home-wrapper .subtitle {
+        font-size: var(--submed);
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .home-wrapper .title {
+        font-size: var(--titlesmall)
+    }
+    .home-wrapper .subtitle {
+        font-size: var(--subsmall)
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .about-content {
+        font-size: var(--subsmall);
+        margin-top: 2vh;
+        font-style: bold;
+        text-align: center;
+        flex-wrap:  wrap-reverse;
+        line-height: 125%;
+    }
+    
+    .about-title * {
+        color: white;
+        text-align: center;
+        font-weight: bolder;
+        font-size: var(--titlesmall);
+    }
 }
