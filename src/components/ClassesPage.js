@@ -2,6 +2,7 @@ import { Card } from 'react-bootstrap';
 import './ClassesPage.css'
 import Picture from './picture.jpg'
 import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 
 const ClassesPage = () => {
 
@@ -38,7 +39,7 @@ const ClassesPage = () => {
                         <Card.Text>
                         {upclass.content}
                         </Card.Text>
-                        <Button variant="primary"> Register! </Button>
+                        <Button variant="primary" as = {Link} to={"https://forms.gle/9npvL5ZVnmdu1HwD7"}> Register! </Button>
                     </Card.Body>
                 </Card>)
 		}

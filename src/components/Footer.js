@@ -17,10 +17,10 @@ const Footer = () => {
         <div className="footer-wrapper">
 
             <div className="footer-description">
-                <p> 
+                <p style={{color: "black", textAlign: "center"}}> 
                 The Inclusive Computing Initiative is on a mission to give everyone an opportunity to learn Computer Science.                                    </p>    
             </div>
-
+{/* 
             <div className="footer-main">
                 <Nav style={{dispay: "flex", flexDirection: "column", alignItems: "center"}}>
                     <Nav.Link style={{color: "white", fontWeight:"bold"}} as = {Link} to = {"/"} className = "px-4">Home</Nav.Link>
@@ -37,7 +37,7 @@ const Footer = () => {
                     <a href='https://www.facebook.com/profile.php?id=100090126751545'> <img style = {{height: "auto", marginLeft: "0.5vw", marginRight: "0.5vw"}} src={facebookLogo}/> </a>
                     <a href='https://www.instagram.com/cs4sped/'> <img style = {{height: "auto", marginLeft: "0.5vw", marginRight: "0.5vw"}} src={instagramLogo}/> </a>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
