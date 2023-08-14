@@ -13,7 +13,7 @@ function Navigationbar() {
       <Navbar.Collapse id="basic-navbar-nav">
         <Container fluid style={{}}>
             <Nav className="me-auto">
-              <Nav.Link as = {Link} to = {"/"} className = "px-5"> <p className='link' style={{textAlign: 'center', justifyContent: "center"}}> Home </p> </Nav.Link>
+              <Nav.Link as = {Link} to = {"/"} className = "px-5"> <p className='link'> Home </p> </Nav.Link>
               <Nav.Link as = {Link} to = {"/about"} className = "px-5"> <p className='link'> About </p> </Nav.Link>
               <Nav.Link as = {Link} to = {"/classes"} className = "px-5"> <p className='link'> Classes </p> </Nav.Link>
               <Nav.Link as = {Link} to = {"/contact"} className = "px-5"> <p className='link'> Contact </p> </Nav.Link>

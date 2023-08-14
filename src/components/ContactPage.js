@@ -19,11 +19,11 @@ const ContactPage = () => {
                 </div>
             </div>
 
-            <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }} className='contact-content'>
+            <div className='contact-content'>
 
                 <Fade right delay = {200}>
-                    <Card style={{ width: '18rem', margin: "1rem", color: "black", height: "min-content", borderRadius: "20px"}} className="contact-cards">
-                        <Card.Img style={{alignSelf: 'center', marginTop: 40}} src={email} />
+                    <Card style={{margin: "1rem", color: "black", height: "min-content", borderRadius: "20px"}} className="contact-cards">
+                        <Card.Img className="card-image" style={{alignSelf: 'center', marginTop: 40}} src={email} />
                         
                         <Card.Body>
                             <Card.Title className="text-center"> Email </Card.Title>
@@ -36,8 +36,8 @@ const ContactPage = () => {
 
                 <Fade right delay = {400}>
 
-                    <Card style={{ width: '18rem', margin: "1rem", color: "black", height: "min-content", borderRadius: "20px"}} className="contact-cards">
-                        <Card.Img style={{height: 150, width: 150, alignSelf: 'center', marginTop: 40}} src={phone} />
+                    <Card style={{margin: "1rem", color: "black", height: "min-content", borderRadius: "20px"}} className="contact-cards">
+                        <Card.Img className="card-image-small" style={{alignSelf: 'center', marginTop: 40}} src={phone} />
                         
                         <Card.Body>
                             <Card.Title className="text-center"> Phone </Card.Title>
@@ -51,8 +51,8 @@ const ContactPage = () => {
 
                 <Fade right delay = {600}>
 
-                    <Card style={{ width: '18rem', margin: "1rem", color: "black", height: "min-content", borderRadius: "20px"}} className="contact-cards">
-                        <Card.Img style={{height: 150, width: 150, alignSelf: 'center', marginTop: 40}} src={instagram_bw} />
+                    <Card style={{margin: "1rem", color: "black", height: "min-content", borderRadius: "20px"}} className="contact-cards">
+                        <Card.Img className="card-image-small" style={{alignSelf: 'center', marginTop: 40}} src={instagram_bw} />
                         
                         <Card.Body>
                             <Card.Title className="text-center"> Instagram </Card.Title>
@@ -65,8 +65,8 @@ const ContactPage = () => {
 
                 <Fade right delay = {800}>
 
-                <Card style={{ width: '18rem', margin: "1rem", color: "black", height: "min-content", borderRadius: "20px"  }} className="contact-cards">
-                    <Card.Img style={{height: 150, width: 150, alignSelf: 'center', marginTop: 40 }} src={linkedin_bw} />
+                <Card style={{ margin: "1rem", color: "black", height: "min-content", borderRadius: "20px"  }} className="contact-cards">
+                    <Card.Img className="card-image-small" style={{alignSelf: 'center', marginTop: 40 }} src={linkedin_bw} />
                     
                     <Card.Body>
                         <Card.Title className="text-center"> LinkedIn </Card.Title>

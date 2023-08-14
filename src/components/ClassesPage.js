@@ -20,7 +20,7 @@ const ClassesPage = () => {
     
             <div className='classes-wrapper'>
                 <div className='title-wrapper'>
-                    <div className="title" style={{position: "relative", width: "100vw", wordWrap: "break-word", backgroundColor: "transparent", fontWeight:"bold"}}>
+                    <div className="title" style={{position: "relative", wordWrap: "break-word", backgroundColor: "transparent", fontWeight:"bold"}}>
                         <Fade top>
                             Upcoming Classes                                
                         </Fade>
