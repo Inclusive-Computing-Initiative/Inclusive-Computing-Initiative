@@ -1,11 +1,46 @@
-.classes-title {
+.classes-wrapper {
+    height: min-content;
+    width: 100%;
+    display: grid;
+    background-color: white;
+    
+    --titleverybig: 3.5rem;
+    --subtitleverybig: 2.5rem;
+
+    --titlebig: 3rem;
+    --subbig: 2rem;
+
+    --titlemed: 2rem;
+    --submed: 1.5rem;
+
+    --titlesmall: 1.5rem;
+    --subsmall: 1rem;
+
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    background-color: #ffeedc;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
 }
 
-.classes-title * {
-    color: black;
-    font-size: 2.75rem;
+.classes-wrapper .title-wrapper {
+    position: absolute;
+    top: 20vh;
+}
+
+
+.classes-wrapper .title {
+    font-size: var(--titleverybig);
+    margin-bottom: 3vh;
+    text-align: center;
+}
+
+.classes {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    padding-top: 30vh;
+    height: 100vh;
+    background-image: linear-gradient(white, #cbaaff);
 }

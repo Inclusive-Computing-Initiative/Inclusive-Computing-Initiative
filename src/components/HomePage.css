@@ -154,7 +154,7 @@ padding-left: 10rem;
     display: flex;
     flex-direction: column;
     width: 100vw;
-    background-image: linear-gradient(#ffffff, #ffffff);
+    background-image: linear-gradient(#ffffff, #c2f6ff);
     align-items: center;
 }
 
@@ -230,48 +230,12 @@ padding-left: 10rem;
 }
 
 
-/* Choose us styles */
+/* Our Approach styles */
 
-.choose_us-wrapper {
-    display: flex;
-    flex-direction: row;
-    padding-top: 20rem;
-    column-gap: 20rem;
+.approach-wrapper {
+    background-image: linear-gradient(#c2f6ff, #aaffd0, #ffffff);
 }
 
-.choose_us-wrapper .choose-section {
-    margin-bottom: 15rem;
-}
-
-.choose_us-wrapper .choose-section-right {
-    margin-bottom: 15rem;
-    /* padding-right: 20rem; */
-}
-
-.choose_us-wrapper .choose-section-title h1 {
-    font-size: 3rem;
-    font-weight: lighter;
-    margin-bottom: 2rem;
-}
-
-.choose_us-wrapper .choose-section-subtitle p {
-    font-size: 2rem;
-}
-
-.choose_us-wrapper .choose-left {
-    display: flex;
-    flex-direction: column;
-    /* padding-left: 20rem; */
-}
-
-.choose_us-wrapper .choose-right {
-    display: flex;
-    flex-direction: column;
-}
-
-.choose_us-wrapper .choose-image-section {
-    margin-bottom: 10rem;
-}
 
 /* Footer Styles */
 

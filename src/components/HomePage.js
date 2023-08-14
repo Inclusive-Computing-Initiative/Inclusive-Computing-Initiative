@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide'
 import TeacherImage from './teacher.jpg'
+import Flash from 'react-reveal/Flash';
 
 const HomePage = () => {    
 	
@@ -45,13 +46,13 @@ const HomePage = () => {
 
                                 <div className='about-top'>
                                         <div className="about-left" >
-                                            <Fade left delay="100">
+                                            <Fade left delay={100}>
                                                 <div className="about-title">
                                                     <p> About Us </p>
                                                 </div>
                                             </Fade>
 
-                                            <Fade left delay="400">
+                                            <Fade left delay={400}>
                                                 <div className="about-content">
                                                     <p> The Inclusive Computing Initiative is a non-profit organization that aims to increase knowledge of Computer Science among students with Special Needs. We beleive that everyone deserves an equal opportunity to learn and create. </p>
                                                 </div>
@@ -77,15 +78,15 @@ const HomePage = () => {
 
 
 
-                            <div style = {{paddingLeft: "12vw", display: "flex", width: "100vw", flexDirection: "column", paddingTop: "25vh", paddingBottom: "20vh", backgroundColor: "#ffffff"}}>
+                            <div className = "approach-wrapper  " style = {{paddingLeft: "12vw", display: "flex", width: "100vw", flexDirection: "column", paddingTop: "25vh", paddingBottom: "20vh", backgroundColor: "#ffffff"}}>
 
                             <Fade top>
-                                <h1 style = {{fontSize: "3rem", fontWeight: "bold", textAlign: "left", backgroundColor: "#ffffff", marginBottom: "15vh"}}> Our Approach </h1>
+                                <h1 style = {{fontSize: "3rem", fontWeight: "bold", textAlign: "left", backgroundColor: "transparent", marginBottom: "15vh"}}> Our Approach </h1>
                             </Fade>
 
                             <div className = "cards">
                             
-                            <Fade top delay = "200">
+                            <Fade top delay = {200}>
                                 <Card className="content-cards" style={{borderRadius: "20px"}}>
                                     <Card.Body>
                                         <Card.Title> <p style={{fontSize: "1.8rem", fontWeight:"bold"}}> Visual Learning </p> </Card.Title>
@@ -98,7 +99,7 @@ const HomePage = () => {
                                 </Card>
                             </Fade>
 
-                            <Fade top delay = "400">
+                            <Fade top delay = {400}>
                                 <Card className="content-cards" style={{borderRadius: "20px"}}>
                                     <Card.Body>
                                         <Card.Title> <p style={{fontSize: "1.8rem", fontWeight:"bold"}}> Individual Attention </p>  </Card.Title>
@@ -112,7 +113,7 @@ const HomePage = () => {
                                 </Card>
                             </Fade>
 
-                            <Fade top delay = "600">
+                            <Fade top delay = {600}>
                                 <Card className="content-cards" style={{borderRadius: "20px"}}>
                                     <Card.Body>
                                         <Card.Title> <p style={{fontSize: "1.8rem", fontWeight:"bold"}}> Custom Pace </p> </Card.Title>
@@ -137,10 +138,18 @@ const HomePage = () => {
                                     flexDirection: "column",
                                     alignItems: "center"
                                 }}>
-                                <h1 style={{ fontWeight: "bold", textAlign:"center", letterSpacing: "1px", marginBottom: "5vh"}}>
-                                   Interested? Take a look at our upcoming classes. 
-                                </h1>
-                                <Button style={{width: "20vw"}} variant='outline-dark' size='lg' as = {Link} to = {"/classes"} > Click Here ⇒ </Button>
+
+                                <Flash>
+
+                                    <h1 style={{ fontWeight: "bold", textAlign:"center", letterSpacing: "1px", marginBottom: "5vh"}}>
+                                    Interested? Take a look at our upcoming classes. 
+                                    </h1>
+                                    
+                                </Flash>
+
+                                <Slide left>
+                                    <Button style={{width: "20vw", minWidth: "200px"}} variant='outline-dark' size='lg' as = {Link} to = {"/classes"} > Click Here ⇒ </Button>
+                                </Slide>
                             </div>
 
                             

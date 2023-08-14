@@ -7,11 +7,13 @@ import Footer from './components/Footer.js'
 import { HashRouter, Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import ScrollToTop from './ScrollToTop.js';
 
 function App() {
   return (
 	<div className="App">
 		<HashRouter>
+			<ScrollToTop/>
 			<Navigationbar/>
 			<Routes>
 				<Route index element = {<HomePage/>}/>
@@ -19,7 +21,7 @@ function App() {
 				<Route path='/classes' element = {<ClassesPage/>}/>
 				<Route path='/contact' element = {<ContactPage/>}/>
 			</Routes>
-			<Footer/>
+			{/* <Footer/> */}
 		</HashRouter>
    	</div>
   );

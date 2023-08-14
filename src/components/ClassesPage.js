@@ -3,48 +3,51 @@ import './ClassesPage.css'
 import Picture from './picture.jpg'
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
+import Fade from 'react-reveal';
 
 const ClassesPage = () => {
 
     const upcomingClasses = [
         {
             name: "Introduction to Web design",
-            date: "April 2nd",
+            date: "TBD",
             content: "Ever visited a website and wondered: How does this work? In this class, students will learn the basics of web developement and even create their own personal websites!",
         	picture: Picture, 
 	},
     ];
 
     return (
-        <>
-           <div style = {{
-                marginTop: "0",
-                // paddingLeft: "10vw",
-                width: "100vw",
-                paddingTop: "10vh",
-                paddingBottom: "10vh",
-                boxShadow: "inset 0 0 1vw #000",
-            }} className='classes-title'>
-                <h1> Upcoming Classes </h1>
-            </div>
-
+    
+            <div className='classes-wrapper'>
+                <div className='title-wrapper'>
+                    <div className="title" style={{position: "relative", width: "100vw", wordWrap: "break-word", backgroundColor: "transparent", fontWeight:"bold"}}>
+                        <Fade top>
+                            Upcoming Classes                                
+                        </Fade>
+                    </div>
+                </div>
+            
 
             <div className='classes'>
-                {upcomingClasses.map(upclass =>
+                {upcomingClasses.map((upclass, num) => {                
+                return (
+                    <Fade delay = {num * 300} down>
+                        <Card style={{ width: '18rem', margin: '2vw' }}>
+                            <Card.Img variant="top" src={upclass.picture} />
+                            <Card.Body>
+                                <Card.Title> {upclass.name} </Card.Title>
+                                <Card.Text>
+                                {upclass.content}
+                                </Card.Text>
+                                <Button variant="primary" as = {Link} to={"https://forms.gle/9npvL5ZVnmdu1HwD7"}> Register! </Button>
+                            </Card.Body>
+                        </Card>
+                    </Fade>  
+                )})}   
+            </div>  
 
-			    <Card style={{ width: '18rem', margin: '2vw' }}>
-                    <Card.Img variant="top" src={upclass.picture} />
-                    <Card.Body>
-                        <Card.Title> {upclass.name} </Card.Title>
-                        <Card.Text>
-                        {upclass.content}
-                        </Card.Text>
-                        <Button variant="primary" as = {Link} to={"https://forms.gle/9npvL5ZVnmdu1HwD7"}> Register! </Button>
-                    </Card.Body>
-                </Card>)
-		}
-            </div>
-        </>
+        </div>
+
     )
 }
 
