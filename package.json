@@ -2,6 +2,7 @@
   "homepage": "www.http://www.inclusivecompute.org",
   "name": "site",
   "version": "0.1.0",
+  "title": "Inclusive Computing Initiative",
   "private": true,
   "dependencies": {
     "@react-spring/web": "^9.7.3",
