@@ -105,12 +105,14 @@
     padding: 20vh;
 }
 
-/* 
+ 
 @media screen and (max-width: 1000px) {
     .member-wrapper {
         flex-direction: column;
+        align-items: center; 
     }
     .board-wrapper {
         flex-direction: column;
+        align-items: center; 
     }
-} */
+} 

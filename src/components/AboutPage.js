@@ -8,6 +8,7 @@ import PersonCard from './PersonCard.js';
 import joshua from './joshua.jpeg'
 import brandon from './brandon.png'
 import dacey from './dacey.png'
+import leo from './leo.jpg'
 
 const AboutPage = () => {
     const [modalShow, setModalShow] = React.useState("");
@@ -24,13 +25,13 @@ const AboutPage = () => {
         },
     
         { 
-            name: "Brandon Bedolla | Vice President",
+            name: "Brandon Bedolla | Secretary",
             picture: brandon,  
             text: "As someone with personal experience caring for a loved one with special needs, I found myself deeply moved when Joshua, the founder of the Inclusive Computing Initiative, spoke passionately about the club's mission in front of my class. The desire to aid and uplift those with special needs has always been close to my heart, and becoming a member of this club felt like a natural step towards fulfilling that goal. As someone with a passion for computer science, I believe that by collaborating with the Inclusive Computing Initiative, we can develop innovative approaches that incorporate creativity and intelligence to better serve all students in the program. Ultimately, my goal is to contribute my skills and knowledge towards building a more inclusive and equitable future for individuals with special needs."
         },
     
         {
-            name: "Tiffany Wang | Cheif Curriculum Officer",
+            name: "Tiffany Wang | Vice President",
             picture: null,
             text: "I joined the Inclusive Computing Initiative because I wanted an opportunity to learn more about coding while gaining experience from teaching others. Since this is my first year learning about computer science, I wanted to find a way to apply my knowledge in real-world situations. Being in the club allowed me to reflect on what I was learning in class and repurpose the knowledge into material for teaching other students. the Inclusive Computing Initiative gives me the chance to meet with fellow peers with similar interests and work collaboratively on building a valuable resource to younger students with special needs who may not have access to as many opportunities in this field. It is a gratifying experience to contribute a project that fulfills my own interests along with supporting the education of other students. ",
         },
@@ -43,9 +44,15 @@ const AboutPage = () => {
     
         {
             name: "Leonardo | Director Of Outreach",
-            picture: null,
+            picture: leo,
             text: null,
         },
+
+        {
+            name: "Carson Sheffield | CFO",
+            picture: null,
+            text: null,
+        }
     
     ];
 
@@ -79,8 +86,47 @@ const AboutPage = () => {
         name: "Namay Saini",
         text: "My decision to join Computer Science for Special Education stemmed from my genuine passion for the field and my love for tutoring others. I believe that everyone should have access to quality education, regardless of their background or abilities. I find great joy in sharing my knowledge and helping others overcome their learning challenges. My commitment to special education and computer science is driven by a desire to make a positive impact in the lives of students who may face additional obstacles in their learning journey.",
     },
-
-    ]
+    {
+        name: "Katie Yao",
+        text: null,
+    },
+    {
+        name: "Anish Chowdhry",
+        text: null,
+    },
+    {
+        name: "Joseph Nguyen",
+        text: null,
+    },
+    {
+        name: "Phoebe Li",
+        text: null,
+    },
+    {
+        name: "Katie Escobedo",
+        text: null,
+    },
+    {
+        name: "Sasank Goteti",
+        text: null,
+    },
+    {
+        name: "Anas Shah",
+        text: null,
+    },
+    {
+        name: "Nafis Anjum",
+        text: null,
+    },
+    {
+        name: "Shazib Hameed",
+        text: null,
+    },
+    {
+        name: "Hasher Syed",
+        text: null,
+    },
+]
 
     return (
         <div className='page-wrapper'>
@@ -108,7 +154,7 @@ const AboutPage = () => {
         <div className='board-wrapper'>
             <Fade>
                 <div style={{marginTop: "20vh"}}> 
-                    <div class="title" style={{position: "relative", width: "100vw", wordWrap: "break-word", backgroundColor: "transparent", fontWeight: "bold "}}>
+                    <div class="title" style={{position: "relative", width: "60vw", wordWrap: "break-word", backgroundColor: "transparent", fontWeight: "bold "}}>
                         <Fade top delay={100}>
                             Our Team
                         </Fade>
@@ -126,7 +172,7 @@ const AboutPage = () => {
                 const name = value.name;
                 return (
                 
-                <Card style={{ width: '18rem', height: "min-content", margin: "1rem", borderRadius: "20px" }}>
+                <Card style={{ width: '14rem', height: "min-content", margin: "1rem", borderRadius: "20px" }}>
                     <Card.Img variant="top" src={value.picture} />
                     <Card.Body>
                     <Card.Title>{name}</Card.Title>

@@ -54,7 +54,7 @@ const HomePage = () => {
 
                                             <Fade left delay={400}>
                                                 <div className="about-content">
-                                                    <p> The Inclusive Computing Initiative is a non-profit organization that aims to increase knowledge of Computer Science among students with Special Needs. We beleive that everyone deserves an equal opportunity to learn and create. </p>
+                                                    <p> The Inclusive Computing Initiative is a non-profit organization that aims to increase knowledge of Computer Science among students with Special Needs. We believe that everyone deserves an equal opportunity to learn and create. </p>
                                                 </div>
                                                 <Button variant='outline-dark' size='lg' as = {Link} to = {"/about"} > Learn More </Button>
 

@@ -28,7 +28,7 @@ const ContactPage = () => {
                         <Card.Body>
                             <Card.Title className="text-center"> Email </Card.Title>
                                 <Card.Text className='text-center'>
-                                    joshvigel@gmail.com
+                                    inclusivecompute@gmail.com
                                 </Card.Text>
                         </Card.Body>
                     </Card>
