@@ -92,11 +92,11 @@ const AboutPage = () => {
     },
     {
         name: "Anish Chowdhry",
-        text: null,
+        text: "My name is Anish Choudhury and I am in this club to learn more about Computer Science while also doing acts of humanitarianism to help people around me to strive for greatness just like I hope to do so as well. One more thing I hope to do is possibly change the world and this club gives me an good opportunity of reaching that goal.",
     },
     {
         name: "Joseph Nguyen",
-        text: null,
+        text: "Hi my name is Joseph Nguyen, and I am involved in social outreaching and mainly I joined this organization because of my passion for technology and helping others. I tried to teach myself some computer languages myself but struggled tremendously . So I wish to give other people an opportunity that I didn’t.",
     },
     {
         name: "Phoebe Li",
@@ -124,7 +124,7 @@ const AboutPage = () => {
     },
     {
         name: "Hasher Syed",
-        text: null,
+        text: "I believe in the transformative power of technology education. By teaching coding to children with special needs, we empower them to channel their creativity and unique abilities into a constructive skill that can open doors to a world of possibilities.",
     },
 ]
 

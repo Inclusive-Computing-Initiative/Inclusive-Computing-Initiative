@@ -1,10 +1,10 @@
 .bg-custom {
-    background-color: rgb(255, 255, 255);
     height: min-content;
+    border-radius: 15px;
 }
 
 .bg-custom * {
-    background-color:white;
+    background-color: transparent;;
     color: black;
 }
 
@@ -12,4 +12,13 @@
     color: black;
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+.navbar-brand {
+    margin-right: 0 !important;
+    margin-left: 1vw !important;
+}
+
+.nav-link p {
+    margin: 0;
 }

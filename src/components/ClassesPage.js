@@ -11,7 +11,7 @@ const ClassesPage = () => {
         {
             name: "Introduction to Web design",
             date: "TBD",
-            content: "Ever visited a website and wondered: How does this work? In this class, students will learn the basics of web developement and even create their own personal websites!",
+            content: "Ever visited a website and wondered: How does this work? In this class, students will learn the basics of web development and even create their own personal websites!",
         	picture: Picture, 
 	},
     ];

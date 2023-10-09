@@ -1,16 +1,4 @@
-
 import './Footer.css'
-import facebookLogo from './f_logo_RGB-Blue_58.png'
-import twitterLogo from './twitter.png'
-import instagramLogo from './instagram.png'
-
-import { Outlet, Link } from "react-router-dom";
-import Nav from 'react-bootstrap/Nav';
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
-import Logo from './logo.png'
-import './Navigationbar.css'
-
 
 const Footer = () => {
     return (
@@ -18,7 +6,37 @@ const Footer = () => {
 
             <div className="footer-description">
                 <p style={{color: "black", textAlign: "center"}}> 
-                The Inclusive Computing Initiative is on a mission to give everyone an opportunity to learn Computer Science.                                    </p>    
+                The Inclusive Computing Initiative is on a mission to give everyone an opportunity to learn Computer Science.                      </p>
+        
+                <div className='social-cards'> 
+                    <div class='flat-under'>
+                        <div class='grow-container'>
+                          <a href="#" class='to-twitter circle-button'>
+                            <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                        <div class='grow-container'>
+                          <a href="#" class='to-red circle-button'>
+                            <i class="fa fa-google-plus fa-fw" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                        <div class='grow-container'>
+                          <a href="#" class='to-facebook circle-button'>
+                            <i class="fa fa-facebook fa-fw" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                        <div class='grow-container'>
+                          <a href="#" class='to-linkedin circle-button'>
+                            <i class="fa fa-linkedin fa-fw" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                        <div class='grow-container'>
+                          <a href="#" class='to-reddit circle-button'>
+                            <i class="fa fa-reddit-alien fa-fw" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                    </div>  
+                </div>
             </div>
 {/* 
             <div className="footer-main">

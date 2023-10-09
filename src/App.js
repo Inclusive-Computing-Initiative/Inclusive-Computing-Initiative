@@ -21,7 +21,6 @@ function App() {
 				<Route path='/classes' element = {<ClassesPage/>}/>
 				<Route path='/contact' element = {<ContactPage/>}/>
 			</Routes>
-			{/* <Footer/> */}
 		</HashRouter>
    	</div>
   );
