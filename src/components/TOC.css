@@ -1,4 +1,6 @@
-.classes-wrapper {
+/* landing wrappers */
+
+.toc-wrapper {
     height: min-content;
     width: 100%;
     display: grid;
@@ -24,32 +26,33 @@
     align-items: center;
 }
 
-.classes-wrapper .title-wrapper {
+.toc-wrapper .title-wrapper {
     position: absolute;
     top: 20vh;
 }
 
 
-.classes-wrapper .title {
+.toc-wrapper .title {
     font-size: var(--titleverybig);
     margin-bottom: 3vh;
     text-align: center;
 }
 
-.classes {
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
+.toc-wrapper .text-wrap {
     padding-top: 30vh;
-    height: 100vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
 }
 
 @media screen and (max-width: 1000px) {
-    .classes-wrapper .title {
+    .page-wrapper .title {
         font-size: var(--titlemed);
     }
-    .subtitle {
+    .page-wrapper .subtitle {
         font-size: var(--submed);
     }
 
+    .page-wrapper p {
+        font-size: var(--subsmall);
+    }
 }

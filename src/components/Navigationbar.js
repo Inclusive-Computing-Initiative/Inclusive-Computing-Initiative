@@ -21,12 +21,10 @@ function Navigationbar() {
               <Nav.Link as = {Link} to = {"/"} className = "px-5"> <p className='link'> Home </p> </Nav.Link>
               <Nav.Link as = {Link} to = {"/about"} className = "px-5"> <p className='link'> About </p> </Nav.Link>
               <Nav.Link as = {Link} to = {"/classes"} className = "px-5"> <p className='link'> Classes </p> </Nav.Link>
-              <Nav.Link as = {Link} to = {"/contact"} className = "px-5"> <p className='link'> Contact </p> </Nav.Link>
             </Nav>
 
-        <Button variant="outline-success" style={{width: "7vw", marginRight: "1vw"}} href="https://forms.gle/E4NAW9CaYjqUnMsq7
-"> Apply! </Button>
-
+      { // <Button variant="outline-success" style={{width: "7vw", marginRight: "1vw"}} href="https://forms.gle/E4NAW9CaYjqUnMsq7"> Apply! </Button> 
+      }
       </Navbar.Collapse>
           </Container>
       </Navbar>

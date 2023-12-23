@@ -96,7 +96,7 @@
 
 .member-wrapper {
     display: flex;
-    background-image: linear-gradient(#fffcaa, #ffd6aa);
+    background-image: linear-gradient(#fffcaa, #ffd6aa, white);
     flex-direction: row;
     align-content: center;
     flex-wrap: wrap;

@@ -1,68 +1,53 @@
-
 .footer-wrapper {
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    align-items: center;
-    background-color: transparent;
+    display: grid !important;
+    grid-template-rows: 1vh 24vh;
+    grid-template-columns: 46vw 46vw;
+    grid-row-gap: 5vh;
+    margin-bottom: 2vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    background: rgba(0, 0, 0, 0);
     z-index: 100;
-    width: 100vw;
-    align-items: center;
+    background-image: linear-gradient(#ffffff, lightgrey);
 }
 
-.footer-wrapper * {
-    color: rgba(255, 10, 10, 0.315);
-    font-weight: lighter;
+.dividor {
+    width: 92vw;
+    height: 1px;
+    border: grey solid 1px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column: 1;
 }
 
-
-
+.footer-left {
+    grid-row-start: 2;
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+    
+.footer-right {
+    grid-row-start: 2;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
 
 .footer-wrapper .footer-description p {
     line-height: 150%;
-    text-align: center;
     font-weight: normal;
+    text-align: left;
 }
 
-.footer-wrapper .footer-description {
-    align-items: center;
-}
-
-.footer-wrapper .footer-main {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 33vw;
-}
-
-.footer-wrapper .footer-main h1 {
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.footer-wrapper .footer-main h2 {
-    font-size: 1rem;
-    font-weight: lighter;
-    margin-top: 0.75rem;
-}
-
-.footer-wrapper .footer-services {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-
-.footer-wrapper .footer-socials {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 33vw;
-}
-
-.footer-wrapper .footer-socials * {
-    width: 2rem;
-    margin: 6px;
+.footer-wrapper .footer-socials img {
+    width: 2vw;
 }
 
 @media screen and (max-width: 800px) {
@@ -95,60 +80,22 @@
         padding-top: 5vh;
         font-size: 1.2rem;
     }
-.circle-button{
-  font-family: 'Roboto', sans-serif;
-  color: #ccc;
-  display: inline-block;
-  font-size: 2rem;
-  border-radius: 50%;
-  transition: all 0.2s ease;
-}
 
-.circle-button:hover{
-  animation: circle-anim 0.3s ease forwards;
-  transition: all 0.4s ease;
-}
-
-.grow-container{
-  display: inline-block;
-  margin: 1em;
-}
-
-.to-red:hover{
-  background: #E5393F;
-}
-
-.to-twitter:hover{
-  background: #1DA1F3;
-}
-
-.to-facebook:hover{
-  background: #3B5998;
-}
-
-.to-linkedin:hover{
-  background: #0077B5;
-}
-
-.to-reddit:hover{
-  background: #FF4500;
-}
-
-@keyframes circle-anim{
-  0% {
-    
-  }
-  
-  90%{
-    padding: 0.35em;
-    margin: -0.35em; 
-  }
-  
-  100%{
-    padding: 0.25em;
-    margin: -0.25em; 
-  }
-}
+    @keyframes circle-anim{
+      0% {
+        
+      }
+      
+      90%{
+        padding: 0.35em;
+        margin: -0.35em; 
+      }
+      
+      100%{
+        padding: 0.25em;
+        margin: -0.25em; 
+      }
+    }
 }
 
 
