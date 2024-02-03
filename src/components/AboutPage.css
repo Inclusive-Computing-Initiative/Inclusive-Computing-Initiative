@@ -69,6 +69,15 @@
     font-size: var(--submed);
 }
 
+.page-wrapper .what-we-do .left {
+    margin-right: 5vw;
+}
+
+.image {
+    width: 50vw;
+    height: 41vh;
+}
+
 @media screen and (max-width: 1000px) {
     .page-wrapper .title {
         font-size: var(--titlemed);
