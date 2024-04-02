@@ -36,11 +36,9 @@
 
 .classes {
     display: flex;
-    justify-content:left;
     flex-direction: row;
     width: 100vw;
     padding-top: 30vh;
-    margin-bottom:20vh;
     height: 100vh;
 }
 
@@ -50,10 +48,6 @@
     }
     .subtitle {
         font-size: var(--submed);
-    }
-
-    .classes {
-        justify-content:center;
     }
 
 }

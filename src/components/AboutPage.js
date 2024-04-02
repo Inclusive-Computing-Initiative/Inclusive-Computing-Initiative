@@ -19,7 +19,7 @@ const AboutPage = () => {
             </div>
 
             <Fade delay = {200}>
-                <div className='mission-statement' style={{marginBottom:"30vh"}}>
+                <div className='mission-statement'>
                     <p> <a href='https://www.cdc.gov/ncbddd/adhd/data.html'> From 2016-2019 there were about 6 million children ages 3-17 diagnosed with ADHD. </a> And ADHD isn't the only mental disorder affecting society. While hundreds of years ago, it was possible to ignore such issues, it's impossible to do the same at the current time. Many children with Special Needs lack the same opportunities as their peers, and it's our mission to ensure that 
                         <strong> everyone can learn and create. </strong>
                     </p>
@@ -27,15 +27,15 @@ const AboutPage = () => {
             </Fade>
     
 
-            <div className='what-we-do' style={{display: 'flex', flexDirection:'row', marginBottom:'30vh'}}>
+            <div className='what-we-do' style={{display: 'flex', marginBottom:'30vh'}}>
                 <div className='left' style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
-                    <div className="title" style={{position: "relative", width: "35vw", wordWrap: "break-word", backgroundColor: "transparent", fontWeight:"bold"}}>
+                    <div className="title" style={{position: "relative", wordWrap: "break-word", backgroundColor: "transparent", fontWeight:"bold"}}>
                         <Fade left>
                             What we do                                
                         </Fade>
                     </div>
                     
-                    <div className='description' style={{width:'35vw'}}> 
+                    <div className='description'> 
                         <p> 
                             We host weekly classes on topics in STEM for student with special needs. We believe that every student learns differently, and by adapting to every student's individual needs, we can create successful education. 
                         </p> 
@@ -43,10 +43,10 @@ const AboutPage = () => {
                 </div>
 
                 <div className='picture'> 
-                    <div className="title" style={{position: "relative", width: "50vw", wordWrap: "break-word", backgroundColor: "transparent", fontWeight:"bold"}}>
+                    <div className="title" style={{position: "relative", wordWrap: "break-word", backgroundColor: "transparent", fontWeight:"bold"}}>
                         <Fade left>
                             <div className='image'> 
-                                <img style={{width:'50vw', borderRadius:"40px"}} src={pic1}/> 
+                                <img style={{borderRadius:"40px"}} src={pic1}/> 
                             </div> 
                         </Fade>
                     </div>

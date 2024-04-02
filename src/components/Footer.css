@@ -51,20 +51,27 @@
 }
 
 @media screen and (max-width: 800px) {
-
-    .footer-wrapper .footer-main h1 {
-        font-size: 1rem;
+    
+    .footer-wrapper * {
+        font-size: 1.4rem;
     }
+
 
 }
 
 @media screen and (max-width: 500px) {
     .footer-wrapper {
         display: flex;
+        flex-direction:column;
         width: 100vw;
         align-items: center;
         justify-content: center;
     } 
+    
+    .footer-wrapper * {
+        font-size: 0.8rem;
+        text-align:center;
+    }
 
     .footer-wrapper .footer-main {
         display: flex;
@@ -75,10 +82,10 @@
         margin-top: 3vh;
     }
     
-    .footer-wrapper .footer-description {
-        align-items: center;
-        padding-top: 5vh;
-        font-size: 1.2rem;
+    .footer-wrapper .footer-left {
+        width: 30vw;
+        align-items:center;  
+         
     }
 
     @keyframes circle-anim{

@@ -24,26 +24,30 @@ const Footer = () => {
                
                <div style={{display:"flex", flexDirection:"row"}}> 
                     <Button as={Link} to="/privacy-policy" style={{background: 'transparent', border:'0px', padding: '0'}} >
-                        <p style={{color: "black", margin: "0", fontSize: "1.2rem"}}>
+                        <p style={{color: "black", margin: "0"}}>
                             PRIVACY POLICYㅤ· 
         </p>
                     </Button>
 
                     <Button as={Link} to="https://docs.google.com/forms/d/e/1FAIpQLScKCS9j1I5mUN_eq_LM85EYCaBOVxerIaRwwMQQgkMDbYC6uw/viewform" style={{background: 'transparent', border:'0px', padding: '0'}} >
-                        <p style={{color: "black", margin: "0", fontSize: "1.2rem"}}>
+                        <p style={{color: "black", margin: "0"}}>
                         ㅤJOIN OUR TEAM
                         </p>
                     </Button>
                 </div>
 
-                 <p style={{fontSize: "1.2rem",color: "black"}}> 
-                    The Inclusive Computing Initiative is on a mission to give everyone an opportunity to learn Computer Science.                      
+                 <p style={{color: "black"}}> 
+                    The Inclusive Computing Initiative is a 501(c)(3) nonprofit organization. 
+                    <br/> EIN: 81-2908499
+                    <br/>
+                    <a href="https://hcb.hackclub.com/inclusive-computing-initiative/"> Financials </a>
                  </p>
+                
             </div>
             
             <div className="footer-right">
                 
-                <p style={{fontSize: "1.2rem", textAlign: "right", margin: '0'}}>
+                <p style={{textAlign: "right", margin: '0'}}>
                     Allen, TX
                     <br/> <a style={{textDecoration:"none"}} href='mailto:inclusivecompute@gmail.com'> inclusivecompute@gmail.com </a>
                     <br/> (586) - 676 - 8033

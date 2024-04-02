@@ -6,41 +6,55 @@ import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide'
 import TeacherImage from './teacher.jpg'
 import Flash from 'react-reveal/Flash';
+import Carousel from 'react-bootstrap/Carousel';
+import pic1 from './pic1crop.png'
+import pic2 from './pic3crop.png'
 
 const HomePage = () => {    
 	
                 return(
                     <div>
 			            <div className="home-wrapper">
+                        
+                            <div className="home-carousel">
+                            <div className="title-wrapper" style={{backgroundColor: "transparent", top: "20vh"}}>
 
-                            <div className="title-wrapper" style={{position: 'absolute', backgroundColor: "transparent", top: "20vh"}}>
 
-
-                                <div class="title" style={{position: "relative", width: "100vw", wordWrap: "break-word", backgroundColor: "transparent", fontWeight:"bold"}}>
+                                <div class="title" style={{position: "relative", wordWrap: "break-word", backgroundColor: "transparent", fontWeight:"bold"}}>
                                     <Fade top>
                                         Inclusive Computing Initiative                                
                                     </Fade>
                                 </div>
 
                                 
-                                <div class="subtitle" style={{position: "relative", width: "100vw", wordWrap: "break-word", backgroundColor: "transparent"}}>
+                                <div class="subtitle" style={{position: "relative", wordWrap: "break-word", backgroundColor: "transparent"}}>
                                     <Fade top delay="400">
                                         Everyone can learn and create.
                                     </Fade>
                                 </div>
 
                                 <Slide left>
-                                    <Button variant='outline-primary' size='lg' as = {Link} to = {"/classes"} > Upcoming Classes </Button>
-                                </Slide>
+                                    <div className='button-wrapper'>
+                                        <Button style = {{marginRight:'1vw'}} variant='outline-primary' size='lg' as = {Link} to = {"/classes"} > Upcoming Classes </Button>
+                                        <Button variant='outline-dark' size='lg' as={Link} to={'https://hcb.hackclub.com/donations/start/inclusive-computing-initiative'}> Donate Now! </Button>
+                                    </div> 
 
-                            </div>
+                    </Slide>
+                   
+                    </div>
+                  
+                                <Carousel className="carousel" style={{borderRadius:'20px'}}>
+                                  <Carousel.Item interval={3000}>
+                                    <img className="carousel-img" src={pic1}/>
+                                  </Carousel.Item>
+                                  <Carousel.Item interval={3000}>
+                                    <img className="carousel-img" src={pic2}/>
+                                  </Carousel.Item>
+                                </Carousel>
+
+
+                    </div>
                         
-                            <div className='landing-wrapper'>
-                                {/* <img 
-                                    src={landingBackground}
-                                /> */}
-                            </div>
-                            
                 
                             <div className="about-wrapper">
 
