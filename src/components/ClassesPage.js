@@ -9,9 +9,9 @@ const ClassesPage = () => {
 
     const upcomingClasses = [
         {
-            name: "Introduction to Web design",
+            name: "Introduction to Game Dev",
             date: "TBD",
-            content: "Ever visited a website and wondered: How does this work? In this class, students will learn the basics of web development and even create their own personal websites!",
+            content: "Students will learn how to create their own scratch games!",
         	picture: Picture, 
 	},
     ];
@@ -39,7 +39,7 @@ const ClassesPage = () => {
                                 <Card.Text>
                                 {upclass.content}
                                 </Card.Text>
-                                <Button variant="primary" as = {Link} to={"https://forms.gle/9npvL5ZVnmdu1HwD7"}> Register! </Button>
+                                <Button variant="primary" as = {Link} to={"https://forms.gle/pCe411ZghiRmiJsE9"}> Register! </Button>
                             </Card.Body>
                         </Card>
                     </Fade>  
