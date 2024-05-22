@@ -28,6 +28,12 @@
     margin-top: 20vh;
 }
 
+.classes-wrapper .subtitle-wrapper {
+    padding-top: 10vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    font-size: var(--submed);
+}
 
 .classes-wrapper .title {
     font-size: var(--titleverybig);
@@ -35,13 +41,16 @@
 }
 
 .classes {
-    display: flex;
-    justify-content:left;
-    flex-direction: row;
-    width: 100vw;
-    padding-top: 30vh;
-    margin-bottom:20vh;
+    width: 80vw;
+    padding-top: 20vh;
     height: 100vh;
+}
+
+.classes * {
+    overflow:hidden;
+}
+    
+.classes .accordion {
 }
 
 @media screen and (max-width: 1000px) {
@@ -50,6 +59,10 @@
     }
     .subtitle {
         font-size: var(--submed);
+    }
+    
+    .classes-wrapper .subtitle-wrapper {
+        text-align: center;
     }
 
     .classes {
