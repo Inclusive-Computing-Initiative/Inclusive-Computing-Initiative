@@ -2,9 +2,44 @@ import './AboutPage.css'
 import React from 'react';
 import { Fade } from 'react-reveal';
 import pic1 from './Picture1.jpg'
-import pic2 from './Picture2.jpg'
-import pic3 from './Picture3.webp'
-import pic4 from './two.jpg'
+import Brandon from './brandon.png'
+import Dacey from './dacey.png'
+import Leo from './leo.jpg' 
+import Joshua from './joshua.jpeg'
+import Anish from './anish.png'
+
+const board = [
+	{
+		name: "Joshua Vigel",
+		title: "Executive Director",
+		picture:Joshua,
+	}, 
+	{
+		name: "Brandon Bedolla",
+		title: "Vice President",
+		picture:Brandon,
+	},
+	{
+		name: "Anish Choudhury",
+		title: "Director of Fundraising",
+		picture:Anish,
+	},
+	{
+		name: "Leo Silveira Martinez Goncalves",
+		title: "Chief Marketing Officer",	
+		picture:Brandon,
+	},
+	{
+		name: "Tiffany Wang",
+		title: "Director of Operations",
+		picture:Brandon,
+	},
+	{
+		name: "Dacey Yang",
+		title: "Secretary",
+		picture:Brandon,
+	},
+]
 
 const AboutPage = () => {
     
@@ -51,7 +86,6 @@ const AboutPage = () => {
                             </div> 
 						</Fade>
                     </div>
-					<img className='pic4' style={{borderRadius:"40px", height: '30vh', position:'absolute'}} src={pic4}/> 
 					</div>
             </div>
       </div>

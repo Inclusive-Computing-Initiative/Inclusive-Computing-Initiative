@@ -49,15 +49,18 @@ const HomePage = () => {
 					</Carousel.Item>		
 					</Carousel>
 			</div>
-
+			
 			<div className="testimonial-wrapper">
-				<div className="test-title"> <p> Testimonials </p> </div>
-				
-				<img className='pic3' src={pic3}/>
-				<div className="testimonial"> 
-					<p>
-					The class you took for my son was amazing he learned a valuable skill and I am hoping this class will make way for further learning & development. The personalized attention to students was very encouraging and motivated my son to attend the sessions. 
-					</p>
+				<div className='test-left'> 
+					<img className='pic3' src={pic3}/>
+				</div>
+				<div className='test-right'> 
+					<div className="test-title"> <p> Testimonials </p> </div>
+					<div className="testimonial"> 
+						<p>
+						The class you took for my son was amazing he learned a valuable skill and I am hoping this class will make way for further learning & development. The personalized attention to students was very encouraging and motivated my son to attend the sessions. 
+						</p>
+					</div>
 				</div>
 			</div>	
 
