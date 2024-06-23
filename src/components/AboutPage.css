@@ -84,6 +84,9 @@
     width: 35vw;
 }
 
+.pic4 {
+}
+
 @media screen and (max-width: 1000px) {
     .page-wrapper .title {
         font-size: var(--titlemed);

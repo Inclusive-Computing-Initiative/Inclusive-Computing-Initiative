@@ -10,24 +10,24 @@ import Fade from 'react-reveal';
 const ClassesPage = () => {
     
     const chapters = [
-        "Allen, TX",
-        "Plano, TX",
+//        "Allen, TX",
+//        "Plano, TX",
         "Frisco, TX",
     ]
 
     const upcomingClasses = [
-        {
-            name: "Introduction to Game Dev",
-            content: "Students will learn how to create their own scratch games!",
-        	picture: Picture, 
-	        location: ["Allen, TX"],
-            link: "https://forms.gle/pCe411ZghiRmiJsE9"       
-        },
+        //{
+        //    name: "Introduction to Game Dev",
+        //    content: "Students will learn how to create their own scratch games!",
+        //	picture: Picture, 
+	//        location: ["Allen, TX"],
+        //    link: "https://forms.gle/pCe411ZghiRmiJsE9"       
+        //},
         {
             name: "Introduction to Web Dev",
             content: "Ever wonder how a website works? Students will learn how to create their own person websites to share with their friends and family!",
         	picture: Picture, 
-	        location: ["Plano, TX", "Frisco, TX"], 
+	        location: ["Frisco, TX"], 
             link:"https://forms.gle/KiBoUtRSgpqB5Lsr6"
         },
 

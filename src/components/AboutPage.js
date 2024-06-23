@@ -4,6 +4,7 @@ import { Fade } from 'react-reveal';
 import pic1 from './Picture1.jpg'
 import pic2 from './Picture2.jpg'
 import pic3 from './Picture3.webp'
+import pic4 from './two.jpg'
 
 const AboutPage = () => {
     
@@ -48,9 +49,10 @@ const AboutPage = () => {
                             <div className='image'> 
                                 <img style={{borderRadius:"40px"}} src={pic1}/> 
                             </div> 
-                        </Fade>
+						</Fade>
                     </div>
-                </div>
+					<img className='pic4' style={{borderRadius:"40px", height: '30vh', position:'absolute'}} src={pic4}/> 
+					</div>
             </div>
       </div>
 
