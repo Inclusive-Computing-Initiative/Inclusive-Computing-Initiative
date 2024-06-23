@@ -6,6 +6,7 @@ import Accordion from 'react-bootstrap/Accordion'
 import { Tab, Tabs } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Fade from 'react-reveal';
+import Chem from './chem.jpg'
 
 const ClassesPage = () => {
     
@@ -13,7 +14,8 @@ const ClassesPage = () => {
 //        "Allen, TX",
 //        "Plano, TX",
         "Frisco, TX",
-    ]
+   		"Fremont, CA", 
+	]
 
     const upcomingClasses = [
         //{
@@ -30,7 +32,13 @@ const ClassesPage = () => {
 	        location: ["Frisco, TX"], 
             link:"https://forms.gle/KiBoUtRSgpqB5Lsr6"
         },
-
+		{
+            name: "Introduction to Chemistry",
+            content: "Students will learn the basics of Chemistry, and even perform some of their own cool experiments!",
+        	picture: Chem, 
+	        location: ["Fremont, CA"], 
+            link:"https://forms.gle/Wd1es6UDro17YY9XA"
+        },
     ];
 
     return (

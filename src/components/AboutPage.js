@@ -6,7 +6,7 @@ import Brandon from './brandon.png'
 import Dacey from './dacey.png'
 import Leo from './leo.jpg' 
 import Joshua from './joshua.jpeg'
-import Anish from './anish.png'
+import { Card } from 'react-bootstrap';
 
 const board = [
 	{
@@ -22,22 +22,20 @@ const board = [
 	{
 		name: "Anish Choudhury",
 		title: "Director of Fundraising",
-		picture:Anish,
 	},
 	{
 		name: "Leo Silveira Martinez Goncalves",
 		title: "Chief Marketing Officer",	
-		picture:Brandon,
+		picture:Leo,
 	},
 	{
 		name: "Tiffany Wang",
 		title: "Director of Operations",
-		picture:Brandon,
 	},
 	{
 		name: "Dacey Yang",
 		title: "Secretary",
-		picture:Brandon,
+		picture:Dacey,
 	},
 ]
 
@@ -86,9 +84,28 @@ const AboutPage = () => {
                             </div> 
 						</Fade>
                     </div>
-					</div>
+				</div>
+
             </div>
-      </div>
+
+				<div className='title' style={{fontWeight:'bold'}}> Our Team </div>
+				<div className='members'>
+					{
+						board.map(member => {
+							return <> 
+									<Card style={{width: '15vw', margin:'2vw'}}>
+										{member.picture? <Card.Img src={member.picture}/> : <></>}
+										<Card.Body> 
+											<Card.Title> {member.title} </Card.Title>
+											<Card.Text> {member.name} </Card.Text>
+										</Card.Body>
+									</Card> 
+								</>
+						})	
+					}	
+				</div>
+
+		</div>
 
     )
 }

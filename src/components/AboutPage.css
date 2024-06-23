@@ -84,6 +84,13 @@
     width: 35vw;
 }
 
+.members {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
 .pic4 {
 }
 
