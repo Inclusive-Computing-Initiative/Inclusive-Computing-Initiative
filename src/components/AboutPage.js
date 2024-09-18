@@ -11,17 +11,17 @@ import { Card } from 'react-bootstrap';
 const board = [
 	{
 		name: "Joshua Vigel",
-		title: "Executive Director",
+		title: "Executive Director | Founder",
 		picture:Joshua,
 	}, 
 	{
 		name: "Brandon Bedolla",
-		title: "Vice President",
+		title: "Board Member",
 		picture:Brandon,
 	},
 	{
 		name: "Anish Choudhury",
-		title: "Director of Fundraising",
+		title: "Board Member",
 	},
 	{
 		name: "Leo Silveira Martinez Goncalves",
@@ -30,13 +30,100 @@ const board = [
 	},
 	{
 		name: "Tiffany Wang",
-		title: "Director of Operations",
+		title: "Vice President",
 	},
 	{
 		name: "Dacey Yang",
-		title: "Secretary",
-		picture:Dacey,
+		title: "Director of Operations",
 	},
+
+	
+
+]
+
+const misc = [
+	{
+		name: "Matthew Price",
+		title: "VP of Marketing"
+	},
+	{
+		name: "Eileen Gin",
+		title: "Officer"
+	},
+	{
+		name: "Jayadeep Velagapudi",
+		title: "Teaching Director"
+	},
+	{
+		name: "Rishi N",
+		title: "Teacher"
+	},
+]
+
+const devs = [
+	{
+		name: "Lucas Wu",
+		title: "AI Developer"
+	},
+	{
+		name: "Pranav Balamurali",
+		title: "AI Developer"
+	},
+	{
+		name: "Abhirama Sonny",
+		title: "AI Developer"
+	},
+	{
+		name: "Kashika Khurana",
+		title: "AI Developer"
+	},
+]
+
+const chapters = [
+	{
+		name: "Immanuel Moses",
+		title: "Michigan Regional Chapter Lead"
+	},
+	{
+		name: "Aryan Sinha",
+		title: "Rochester MI Co-president"
+	},
+	{
+		name: "Aaradhya",
+		title: "Walnut Grove Co-president"
+	},
+	{
+		name: "Angela Wok",
+		title: "Fremont Regional President"
+	},
+	{
+		name: "Ansh",
+		title: "Rochester MI Co-president"
+	},
+	{
+		name: "Athindra",
+		title: "Walnut Grove Co-president"
+	},
+	{
+		name: "Harshita Kharbanda",
+		title: "Frisco TX Co-president"
+	},
+	{
+		name: "Ria Sood",
+		title: "Frisco TX Co-president"
+	},
+	{
+		name: "Tanya Verma",
+		title: "Frisco TX Co-president"
+	},
+	{
+		name: "Vishal Vinjamuri",
+		title: "Frisco TX Co-president"
+	},
+	{
+		name: "Vishy",
+		title: "Frisco TX Co-president"
+	}
 ]
 
 const AboutPage = () => {
@@ -88,13 +175,12 @@ const AboutPage = () => {
 
             </div>
 
-				<div className='title' style={{fontWeight:'bold'}}> Our Team </div>
-				<div className='members'>
+				<div className='title' style={{fontWeight:'bold', marginBottom:"50px"}}> Our Team </div>
+				<div className='members' style={{width:"70vw", display:'flex', flexDirection:'row', justifyContent:'space-evenly', alignItems:'center', flexWrap:'wrap'}}>
 					{
 						board.map(member => {
 							return <> 
-									<Card style={{width: '15vw', margin:'2vw'}}>
-										{member.picture? <Card.Img src={member.picture}/> : <></>}
+									<Card style={{width: 'max-content', margin:'20px'}}>
 										<Card.Body> 
 											<Card.Title> {member.title} </Card.Title>
 											<Card.Text> {member.name} </Card.Text>
@@ -103,7 +189,51 @@ const AboutPage = () => {
 								</>
 						})	
 					}	
+					<div style={{width:'80vw', height:'1px', border:'1px solid grey', margin:'40px'}}/>
+		
+					{
+						devs.map(member => {
+							return <> 
+									<Card style={{width: 'max-content', margin:'20px'}}>
+										<Card.Body> 
+											<Card.Title> {member.title} </Card.Title>
+											<Card.Text> {member.name} </Card.Text>
+										</Card.Body>
+									</Card> 
+								</>
+						})	
+					}	
+					<div style={{width:'80vw', height:'1px', border:'1px solid grey', margin:'40px'}}/>
+
+					{
+						chapters.map(member => {
+							return <> 
+									<Card style={{width: 'max-content', margin:'20px'}}>
+										<Card.Body> 
+											<Card.Title> {member.title} </Card.Title>
+											<Card.Text> {member.name} </Card.Text>
+										</Card.Body>
+									</Card> 
+								</>
+						})	
+					}	
+					<div style={{width:'80vw', height:'1px', border:'1px solid grey', margin:'40px'}}/>
+					{
+						misc.map(member => {
+							return <> 
+									<Card style={{width: 'max-content', margin:'20px'}}>
+										<Card.Body> 
+											<Card.Title> {member.title} </Card.Title>
+											<Card.Text> {member.name} </Card.Text>
+										</Card.Body>
+									</Card> 
+								</>
+						})	
+					}	
+
+					<div style={{width:'80vw', height:'1px', border:'1px solid grey', margin:'40px'}}/>
 				</div>
+
 
 		</div>
 

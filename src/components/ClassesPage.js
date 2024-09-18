@@ -11,21 +11,29 @@ import Chem from './chem.jpg'
 const ClassesPage = () => {
     
     const chapters = [
-//        "Allen, TX",
-//        "Plano, TX",
+        "Allen, TX",
+        "Rochester, MI",
         "Frisco, TX",
    		"Fremont, CA", 
 	]
 
     const upcomingClasses = [
-        //{
-        //    name: "Introduction to Game Dev",
-        //    content: "Students will learn how to create their own scratch games!",
-        //	picture: Picture, 
-	//        location: ["Allen, TX"],
-        //    link: "https://forms.gle/pCe411ZghiRmiJsE9"       
-        //},
         {
+            name: "Introduction to Chemistry",
+            content: "Students will learn the basics of Chemistry, and even do real-life lab experiments!",
+        	picture: Chem, 
+	        location: ["Allen, TX"],
+            link: "https://forms.gle/PZ5gZshvx2JReqfaA"       
+        },
+		{
+            name: "Introduction to Game Dev",
+            content: "Students will learn how to code their own games on scratch!",
+        	picture: Picture, 
+	        location: ["Rochester, MI"], 
+            link:"https://forms.gle/RhaysuJv6TdHRur97"
+        },
+        {
+			
             name: "Introduction to Web Dev",
             content: "Ever wonder how a website works? Students will learn how to create their own person websites to share with their friends and family!",
         	picture: Picture, 
