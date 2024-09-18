@@ -1,0 +1,143 @@
+/* landing wrappers */
+
+.page-wrapper {
+    height: min-content;
+    width: 100%;
+    display: grid;
+    background-color: white;
+    
+    --titleverybig: 3.5rem;
+    --subtitleverybig: 2.5rem;
+
+    --titlebig: 3rem;
+    --subbig: 2rem;
+
+    --titlemed: 2rem;
+    --submed: 1.5rem;
+
+    --titlesmall: 1.5rem;
+    --subsmall: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+
+.page-wrapper .title-wrapper {
+    margin-top: 20vh;
+}
+
+
+.page-wrapper .title {
+    font-size: var(--titleverybig);
+    text-align: center;
+}
+
+.page-wrapper .subtitle {
+    font-size: var(--subbig);
+    margin-bottom: 3vh;
+    text-align: center;
+}
+
+.page-wrapper .about-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.page-wrapper .about-title * {
+    color: black;
+    font-size: 2.75rem;
+}
+
+/* mission statement */
+
+.page-wrapper .mission-statement {
+    padding-top: 15vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    margin-bottom: 20vh;
+}
+
+.page-wrapper p {
+    line-height: 2;;
+    text-align: center;
+    font-size: var(--submed);
+}
+
+.what-we-do * {
+    margin: 0;
+}
+
+.what-we-do {
+    width: 80vw;
+    justify-content: space-between;
+}
+
+.what-we-do .left .description {
+    width: 35vw;
+}
+.what-we-do .image img {
+    width: 35vw;
+}
+
+.members {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.pic4 {
+}
+
+@media screen and (max-width: 1000px) {
+    .page-wrapper .title {
+        font-size: var(--titlemed);
+    }
+    .page-wrapper .subtitle {
+        font-size: var(--submed);
+    }
+
+    .page-wrapper p {
+        font-size: var(--subsmall);
+    }
+}
+
+.what-we-do {
+    flex-direction:row;
+}
+ 
+@media screen and (max-width: 1000px) {
+    .member-wrapper {
+        flex-direction: column;
+        align-items: center; 
+    }
+    .board-wrapper {
+        flex-direction: column;
+        align-items: center; 
+    }
+    .what-we-do {
+        width: 90vw;
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+    }
+
+    .what-we-do .left .description {
+        width: 70vw;
+    }
+    .what-we-do .image img {
+        margin-top:10vh; 
+        width: 90vw;
+        border-radius: 20; 
+    }
+        
+    .mission-statement {
+        padding-top:0;
+    }
+}
+
