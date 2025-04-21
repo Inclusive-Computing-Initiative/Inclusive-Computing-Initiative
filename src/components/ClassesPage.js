@@ -41,11 +41,11 @@ const ClassesPage = () => {
             link:"https://forms.gle/KiBoUtRSgpqB5Lsr6"
         },
 		{
-            name: "Introduction to Chemistry",
+            name: "Introduction to Biology",
             content: "Students will learn the basics of Chemistry, and even perform some of their own cool experiments!",
-        	picture: Chem, 
-	        location: ["Fremont, CA"], 
-            link:"https://forms.gle/Wd1es6UDro17YY9XA"
+        	picture: Bio, 
+	        location: ["Frisco, TX"], 
+            link:"https://forms.gle/yFG3ZxhXLGkPtmBa9"
         },
     ];
 
