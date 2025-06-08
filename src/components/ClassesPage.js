@@ -11,41 +11,16 @@ import Chem from './chem.jpg'
 const ClassesPage = () => {
     
     const chapters = [
-        "Allen, TX",
-        "Rochester, MI",
-        "Frisco, TX",
-   		"Fremont, CA", 
+        "Dallas, TX",
 	]
 
     const upcomingClasses = [
-        {
-            name: "Introduction to Chemistry",
-            content: "Students will learn the basics of Chemistry, and even do real-life lab experiments!",
+		{
+            name: "CodeTogether Hackathon",
+            content: "Students will learn how to create a technical project as a team and present it!",
         	picture: Chem, 
-	        location: ["Allen, TX"],
-            link: "https://forms.gle/PZ5gZshvx2JReqfaA"       
-        },
-		{
-            name: "Introduction to Game Dev",
-            content: "Students will learn how to code their own games on scratch!",
-        	picture: Picture, 
-	        location: ["Rochester, MI"], 
-            link:"https://forms.gle/RhaysuJv6TdHRur97"
-        },
-        {
-			
-            name: "Introduction to Web Dev",
-            content: "Ever wonder how a website works? Students will learn how to create their own person websites to share with their friends and family!",
-        	picture: Picture, 
-	        location: ["Frisco, TX"], 
-            link:"https://forms.gle/KiBoUtRSgpqB5Lsr6"
-        },
-		{
-            name: "Introduction to Biology",
-            content: "Students will learn the basics of Chemistry, and even perform some of their own cool experiments!",
-        	picture: Bio, 
-	        location: ["Frisco, TX"], 
-            link:"https://forms.gle/yFG3ZxhXLGkPtmBa9"
+	        location: ["Dallas, TX"], 
+            link:"/hackathon"
         },
     ];
 
@@ -83,7 +58,7 @@ const ClassesPage = () => {
                                                     <Card.Text>
                                                     {upclass.content}
                                                     </Card.Text>
-                                                    <Button variant="primary" as = {Link} to={upclass.link}> Register! </Button>
+                                                    <Button variant="primary" as = {Link} to={"/hackathon"}> Register! </Button>
                                                 </Card.Body>
                                             </Card>
                                         )

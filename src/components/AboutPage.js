@@ -175,64 +175,65 @@ const AboutPage = () => {
 
             </div>
 
-				<div className='title' style={{fontWeight:'bold', marginBottom:"50px"}}> Our Team </div>
-				<div className='members' style={{width:"70vw", display:'flex', flexDirection:'row', justifyContent:'space-evenly', alignItems:'center', flexWrap:'wrap'}}>
-					{
-						board.map(member => {
-							return <> 
-									<Card style={{width: 'max-content', margin:'20px'}}>
-										<Card.Body> 
-											<Card.Title> {member.title} </Card.Title>
-											<Card.Text> {member.name} </Card.Text>
-										</Card.Body>
-									</Card> 
-								</>
-						})	
-					}	
-					<div style={{width:'80vw', height:'1px', border:'1px solid grey', margin:'40px'}}/>
-		
-					{
-						devs.map(member => {
-							return <> 
-									<Card style={{width: 'max-content', margin:'20px'}}>
-										<Card.Body> 
-											<Card.Title> {member.title} </Card.Title>
-											<Card.Text> {member.name} </Card.Text>
-										</Card.Body>
-									</Card> 
-								</>
-						})	
-					}	
-					<div style={{width:'80vw', height:'1px', border:'1px solid grey', margin:'40px'}}/>
+		{//			<div className='title' style={{fontWeight:'bold', marginBottom:"50px"}}> Our Team </div>
+		//	<div className='members' style={{width:"70vw", display:'flex', flexDirection:'row', justifyContent:'space-evenly', alignItems:'center', flexWrap:'wrap'}}>
+	//				{
+	//					board.map(member => {
+	//						return <> 
+	//								<Card style={{width: 'max-content', margin:'20px'}}>
+	//									<Card.Body> 
+	//										<Card.Title> {member.title} </Card.Title>
+	//										<Card.Text> {member.name} </Card.Text>
+	//									</Card.Body>
+	//								</Card> 
+	//							</>
+	//					})	
+	//				}	
+	//				<div style={{width:'80vw', height:'1px', border:'1px solid grey', margin:'40px'}}/>
+	//	
+	//				{
+	//					devs.map(member => {
+	//						return <> 
+	//								<Card style={{width: 'max-content', margin:'20px'}}>
+	//									<Card.Body> 
+	//										<Card.Title> {member.title} </Card.Title>
+	//										<Card.Text> {member.name} </Card.Text>
+	//									</Card.Body>
+	//								</Card> 
+	//							</>
+	//					})	
+	//				}	
+	//				<div style={{width:'80vw', height:'1px', border:'1px solid grey', margin:'40px'}}/>
 
-					{
-						chapters.map(member => {
-							return <> 
-									<Card style={{width: 'max-content', margin:'20px'}}>
-										<Card.Body> 
-											<Card.Title> {member.title} </Card.Title>
-											<Card.Text> {member.name} </Card.Text>
-										</Card.Body>
-									</Card> 
-								</>
-						})	
-					}	
-					<div style={{width:'80vw', height:'1px', border:'1px solid grey', margin:'40px'}}/>
-					{
-						misc.map(member => {
-							return <> 
-									<Card style={{width: 'max-content', margin:'20px'}}>
-										<Card.Body> 
-											<Card.Title> {member.title} </Card.Title>
-											<Card.Text> {member.name} </Card.Text>
-										</Card.Body>
-									</Card> 
-								</>
-						})	
-					}	
+	//				{
+	//					chapters.map(member => {
+	//						return <> 
+	//								<Card style={{width: 'max-content', margin:'20px'}}>
+	//									<Card.Body> 
+	//										<Card.Title> {member.title} </Card.Title>
+	//										<Card.Text> {member.name} </Card.Text>
+	//									</Card.Body>
+	//								</Card> 
+	//							</>
+	//					})	
+	//				}	
+	//				<div style={{width:'80vw', height:'1px', border:'1px solid grey', margin:'40px'}}/>
+	//				{
+	//					misc.map(member => {
+	//						return <> 
+	//								<Card style={{width: 'max-content', margin:'20px'}}>
+	//									<Card.Body> 
+	//										<Card.Title> {member.title} </Card.Title>
+	//										<Card.Text> {member.name} </Card.Text>
+	//									</Card.Body>
+	//								</Card> 
+	//							</>
+	//					})	
+	//				}	
 
-					<div style={{width:'80vw', height:'1px', border:'1px solid grey', margin:'40px'}}/>
-				</div>
+	//				<div style={{width:'80vw', height:'1px', border:'1px solid grey', margin:'40px'}}/>
+	//			</div>
+		}
 
 
 		</div>

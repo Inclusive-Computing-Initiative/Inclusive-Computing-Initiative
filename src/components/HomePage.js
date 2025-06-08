@@ -31,7 +31,7 @@ const HomePage = () => {
 					
 					<Slide left>
 						<div className='button-wrapper'>
-							<Button style = {{marginRight:'1vw'}} variant='outline-primary' size='lg' as = {Link} to = {"/classes"} > Upcoming Classes </Button>
+							<Button style = {{marginRight:'1vw'}} variant='outline-primary' size='lg' as = {Link} to = {"/hackathon"} > CodeTogether Hackathon </Button>
 							<Button variant='outline-dark' size='lg' as={Link} to={'https://hcb.hackclub.com/donations/start/inclusive-computing-initiative'}> Donate Now! </Button>
 						</div> 
 					</Slide>

@@ -5,6 +5,7 @@ import ContactPage from './components/ContactPage.js';
 import ClassesPage from './components/ClassesPage.js';
 import TOC from './components/TOC.js';
 import Footer from './components/Footer.js';
+import Hackathon from './components/Hackathon.js'
 import { HashRouter, Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -22,6 +23,7 @@ function App() {
 				<Route path='/classes' element = {<ClassesPage/>}/>
 				<Route path='/contact' element = {<ContactPage/>}/>
 		        <Route path='/privacy-policy' element = {<TOC/>}/>	
+	  			<Route path='/hackathon' element = {<Hackathon/>}/>
             </Routes>
         <Footer/> 
       </HashRouter>
