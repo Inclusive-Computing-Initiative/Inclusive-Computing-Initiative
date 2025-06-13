@@ -41,9 +41,20 @@
     margin-bottom: 3vh;
 }
 .home-wrapper .button-wrapper {
-    display:flex;
-    flex-direction:row;
-    width:20vw;
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+    gap: 1.5vw;
+    justify-content: flex-start;
+}
+
+.home-wrapper .button-wrapper .responsive-btn {
+    flex: 1 1 0;
+    min-width: 0;
+    white-space: nowrap;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    border-width: 2.5px !important;
 }
 
 .home-wrapper .home-carousel {
@@ -260,6 +271,16 @@
 }
 
 @media screen and (max-width: 1000px) {
+    .home-wrapper, .home-carousel {
+        margin-top: 2vh;
+    }
+    .about-wrapper {
+        margin-top: 2vh;
+    }
+    .testimonial-wrapper {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
     .home-wrapper .title {
         font-size: var(--titlemed);
         text-align: center; 
@@ -269,18 +290,24 @@
         text-align: center; 
     }
     .home-wrapper .button-wrapper {
-        flex-direction:column;
-        width:70vw;
-        margin-bottom:5vh;
-   }
+        flex-direction: column;
+        width: 80vw;
+        gap: 2vh;
+        margin-bottom: 5vh;
+    }
+    .home-wrapper .button-wrapper .responsive-btn {
+        width: 100%;
+        font-size: 1.1rem;
+        padding: 1rem 0;
+    }
     
-   .title-wrapper {
+    .title-wrapper {
         align-items: center;
         justify-content:center;
  
    }
     
-   .home-wrapper .home-carousel {
+    .home-wrapper .home-carousel {
         flex-direction:column;
         align-items:center;
     }
@@ -305,10 +332,11 @@
 
     .cards {
         flex-direction: column;
+        align-items: center;
     }
     
     .content-cards {
-        margin: 5vh 5vh 0 0;
+        margin: 5vh auto 0 auto;
         width: 75vw;
     }
 

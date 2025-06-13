@@ -126,7 +126,7 @@ const Hackathon = () => {
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Phone Support",
-      detail: "(586) 676 8033",
+      detail: "(586) 676-8033",
       description: "Speak directly with our team"
     }
   ];

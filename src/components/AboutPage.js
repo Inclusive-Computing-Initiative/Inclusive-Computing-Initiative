@@ -141,8 +141,7 @@ const AboutPage = () => {
 
             <Fade delay = {200}>
                 <div className='mission-statement'>
-                    <p> <a href='https://www.cdc.gov/ncbddd/adhd/data.html'> From 2016-2019 there were about 6 million children ages 3-17 diagnosed with ADHD. </a> And ADHD isn't the only mental disorder affecting society. While hundreds of years ago, it was possible to ignore such issues, it's impossible to do the same at the current time. Many children with Special Needs lack the same opportunities as their peers, and it's our mission to ensure that 
-                        <strong> everyone can learn and create. </strong>
+                    <p> Between 2016 and 2019, <a href='https://www.cdc.gov/ncbddd/adhd/data.html'>approximately 6 million children ages 3-17</a> diagnosed with ADHD, one of many mental health challenges affecting children today.In the past, such issues were often overlooked, but in our modern world, they demand our attention. Too many children with special needs still face unequal access to quality education and opportunities. Our mission is to change that: to ensure that <strong>every</strong> child, regardless of their circumstances, has the support they need to learn, grow, and create to their fullest potential.
                     </p>
                 </div>
             </Fade>

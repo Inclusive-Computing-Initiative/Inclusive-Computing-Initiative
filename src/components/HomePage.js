@@ -13,12 +13,13 @@ import pic3 from './one.jpg'
 import pic4 from './two.jpg'
 
 const HomePage = () => {    
+	const isMobile = window.innerWidth <= 1000;
 
 	return(
 	<div>
 		<div className="home-wrapper">
 			<div className="home-carousel">
-				<div className="title-wrapper" style={{backgroundColor: "transparent", top: "20vh"}}>
+				<div className="title-wrapper" style={{backgroundColor: "transparent"}}>
 					<div class="title" style={{position: "relative", wordWrap: "break-word", backgroundColor: "transparent", fontWeight:"bold"}}>
 						<Fade top>
 						Inclusive Computing Initiative                                
@@ -26,13 +27,13 @@ const HomePage = () => {
 					</div>
 					
 					<div class="subtitle" style={{position: "relative", wordWrap: "break-word", backgroundColor: "transparent"}}>
-						<Fade top delay="400"> Everyone can learn and create. </Fade>
+						<Fade top delay="400"> <i>Everyone can learn and create.</i> </Fade>
 					</div>
 					
 					<Slide left>
 						<div className='button-wrapper'>
-							<Button style = {{marginRight:'1vw'}} variant='outline-primary' size='lg' as = {Link} to = {"/hackathon"} > CodeTogether Hackathon </Button>
-							<Button variant='outline-dark' size='lg' as={Link} to={'https://hcb.hackclub.com/donations/start/inclusive-computing-initiative'}> Donate Now! </Button>
+							<Button className='responsive-btn' variant='outline-primary' size='lg' as={Link} to={'/hackathon'}> <b>CodeTogether Hackathon </b> </Button>
+							<Button className='responsive-btn' variant='outline-dark' size='lg' as={Link} to={'https://hcb.hackclub.com/donations/start/inclusive-computing-initiative'}> <b>Donate Now!</b> </Button>
 						</div> 
 					</Slide>
 				</div>
@@ -58,7 +59,11 @@ const HomePage = () => {
 					<div className="test-title"> <p> Testimonials </p> </div>
 					<div className="testimonial"> 
 						<p>
-						The class you took for my son was amazing he learned a valuable skill and I am hoping this class will make way for further learning & development. The personalized attention to students was very encouraging and motivated my son to attend the sessions. 
+						The class you taught my son was amazing! He learned a valuable skill and I am hoping this class will make way for further learning & development. The personalized attention to students was very encouraging and motivated my son to attend the sessions.
+						<br></br>
+						<div style={{textAlign: "right"}}>
+							<i>- Anonymous Parent</i>
+						</div>
 						</p>
 					</div>
 				</div>
@@ -92,7 +97,15 @@ const HomePage = () => {
 
 
 
-			<div className = "approach-wrapper  " style = {{paddingLeft: "12vw", display: "flex", width: "100vw", flexDirection: "column", paddingTop: "25vh", paddingBottom: "20vh", backgroundColor: "#ffffff"}}>
+			<div className = "approach-wrapper" style = {{
+				paddingLeft: isMobile ? "2vw" : "12vw",
+				display: "flex",
+				width: "100vw",
+				flexDirection: "column",
+				paddingTop: isMobile ? "4vh" : "25vh",
+				paddingBottom: isMobile ? "4vh" : "20vh",
+				backgroundColor: "#ffffff"
+			}}>
 				<Fade top>
 					<h1 style = {{fontSize: "3rem", fontWeight: "bold", textAlign: "left", backgroundColor: "transparent", marginBottom: "15vh"}}> Our Approach </h1>
 				</Fade>
@@ -103,7 +116,7 @@ const HomePage = () => {
 							<Card.Body>
 								<Card.Title> <p style={{fontSize: "1.8rem", fontWeight:"bold"}}> Visual Learning </p> </Card.Title>
 								<Card.Text>
-									<p style={{fontSize: "1.4rem"}}> Many children are visual learners. That's why our curriculum focuses on represeting topics in a tangible and engaging way to ensure that every student sufficiently understands the topics. </p>
+									<p style={{fontSize: "1.4rem"}}> Many children are visual learners. That's why our curriculum focuses on representing topics in a tangible and engaging way, using hands-on examples and vivid illustrations to ensure that every student sufficiently understands the topics. </p>
 								</Card.Text>
 							</Card.Body>
 						</Card>
@@ -114,7 +127,7 @@ const HomePage = () => {
 							<Card.Body>
 								<Card.Title> <p style={{fontSize: "1.8rem", fontWeight:"bold"}}> Individual Attention </p>  </Card.Title>
 								<Card.Text>
-									<p style={{fontSize: "1.4rem"}}> We ensure that every student gets individual attentione from our highly qualified teachers. This attention is necessary to create a safe and welcoming environment and to understand and care to the needs of each and every student. </p>
+									<p style={{fontSize: "1.4rem"}}> We ensure that every student gets individual attention from our highly qualified teachers. This attention is necessary to create a safe and welcoming environment and to understand and care to the needs of each and every student. </p>
 								</Card.Text>
 							</Card.Body>
 						</Card>
@@ -125,7 +138,7 @@ const HomePage = () => {
 							<Card.Body>
 								<Card.Title> <p style={{fontSize: "1.8rem", fontWeight:"bold"}}> Custom Pace </p> </Card.Title>
 								<Card.Text>
-									<p style={{fontSize: "1.4rem"}}> Is the student eager to learn, or not? Do they grasp concepts quickly, or do they need some time to think over? Either way, we can accomodate. We allow each student to learn at whatever pace they are comfortable in while still challenging them to improve.
+									<p style={{fontSize: "1.4rem"}}> Is the student eager to learn, or not? Do they grasp concepts quickly, or need some time to think it through? Either way, we can accommodate. We let each student learn at their own pace while still encouraging and challenging them to improve.
 									</p>
 								</Card.Text>
 							</Card.Body>
@@ -137,7 +150,7 @@ const HomePage = () => {
 
 			<div className='interested-wrapper' style={{
 				width: "100vw",
-				paddingBottom: "10vh",
+				paddingBottom: isMobile ? "3vh" : "10vh",
 				backgroundColor: "#ffffff",
 				display: "flex",
 				flexDirection: "column",

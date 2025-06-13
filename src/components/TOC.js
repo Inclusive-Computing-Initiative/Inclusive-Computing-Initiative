@@ -21,7 +21,12 @@ Privacy Policy:  The Inclusive Computing Initiative takes very seriously and res
 What Data We Collect: The Inclusive Computing Initiative collects personal information supplied to us voluntarily by supporters, volunteers, and visitors to our website. Whether signing up for a class, responding to a mailer, or subscribing for news and updates, The Inclusive Computing Initiative may ask you for personal contact information such as:<br/>
 
 <br/>
-Your first and last name, phone number, and e-mail address. Technical data collected may include internet protocol address, browser type, operating system, and platform, as well as other technology on the devices used to access this site. Collected data may include your preferences in receiving marketing communications from us and our third-party partners.<br/>
+<ul>
+    <li>• Your first and last name</li>
+    <li>• Your phone number</li>
+    <li>• Your e-mail address</li>
+</ul>
+Technical data collected may include internet protocol address, browser type, operating system, and platform, as well as other technology on the devices used to access this site. Collected data may include your preferences in receiving marketing communications from us and our third-party partners.<br/>
 
 <br/>
 Signup Information: The Inclusive Computing Initiative maintains prospective student's and their respective parent/gaurdian's name, telephone numbers, email addresses, and concerns about their child.<br/>
@@ -39,10 +44,8 @@ How We Protect Your Data: We have added appropriate security measures to prevent
 Third-Party Links: This website may include links to third-party websites, plug-ins, and applications. Clicking on those links or enabling those connections may allow third parties to collect or share data about you. We do not control these third-party websites and are not responsible for their privacy statements. When you leave our website, we recommend you read the privacy policy notice of each website you visit.<br/>
 
 <br/>
-How to Opt-Out: If you wish to opt out of receiving future communications or to limit your information being shared by any of the methods described above, please contact The Inclusive Computing Initiative at the below contact info:<br/>
+How to Opt-Out: If you wish to opt out of receiving future communications or to limit your information being shared by any of the methods described above, please contact The Inclusive Computing Initiative at <a href="mailto:inclusivecompute@gmail.com">inclusivecompute@gmail.com</a><br/>
 
-<br/>
-E-mail: inclusivecompute@gmail.com<br/>
 <br/>
 Changes to Policy: We reserve the right to change this policy from time to time. When we do, we will note the last update at the top of this policy.<br/>
 
