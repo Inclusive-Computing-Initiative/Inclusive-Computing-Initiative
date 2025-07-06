@@ -56,8 +56,8 @@ const Hackathon = () => {
     {
       icon: <Clock className="w-6 h-6" />,
       title: "Time",
-      detail: "11:00 AM – 3:00 PM",
-      description: "4 hours of focused coding, learning, and fun"
+      detail: "10:00 AM – 1:30 PM",
+      description: "3.5 hours of focused coding, learning, and fun"
     },
     {
       icon: <Utensils className="w-6 h-6" />,
