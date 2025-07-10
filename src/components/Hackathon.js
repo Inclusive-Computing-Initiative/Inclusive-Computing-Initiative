@@ -56,7 +56,7 @@ const Hackathon = () => {
     {
       icon: <Clock className="w-6 h-6" />,
       title: "Time",
-      detail: "11:00 AM – 3:00 PM",
+      detail: "10:15 AM – 1:15 PM",
       description: "4 hours of focused coding, learning, and fun"
     },
     {
@@ -64,12 +64,6 @@ const Hackathon = () => {
       title: "Lunch",
       detail: "Provided for all participants",
       description: "Delicious, inclusive meal options for everyone"
-    },
-    {
-      icon: <Palette className="w-6 h-6" />,
-      title: "Theme",
-      detail: "[Redacted]",
-      description: "Exciting theme to be revealed soon!"
     },
   ];
 
@@ -175,7 +169,7 @@ const Hackathon = () => {
                 An inclusive hackathon designed specifically for neurodivergent students to code, create, and celebrate together in a supportive environment.
               </p>
              	
-	  	 	  <a href='https://forms.gle/8fx7QGkHCzgWhPe16'>
+	  	 	  <a href='https://forms.gle/HN9n6GdGxHYgxwjZ8'>
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -200,7 +194,7 @@ const Hackathon = () => {
                   <Calendar className="w-5 h-5 text-convrt-purple" />
                   <div className="text-center">
                     <div className="font-semibold text-convrt-dark-blue">July 19th</div>
-                    <div className="text-sm text-convrt-dark-blue/70">11:00 AM – 3:00 PM</div>
+                    <div className="text-sm text-convrt-dark-blue/70">10:15 AM – 1:15 PM</div>
                   </div>
                 </div>
                 <div className="flex items-center justify-center space-x-3 bg-white/70 backdrop-blur-sm rounded-xl p-4 border border-white/20">
@@ -214,7 +208,7 @@ const Hackathon = () => {
                   <MapPin className="w-5 h-5 text-convrt-purple" />
                   <div className="text-center">
                     <div className="font-semibold text-convrt-dark-blue">Accessible Venue</div>
-                    <div className="text-sm text-convrt-dark-blue/70">Location TBA</div>
+                    <div className="text-sm text-convrt-dark-blue/70">Davis Library in Plano </div>
                   </div>
                 </div>
               </motion.div>
@@ -577,7 +571,7 @@ At our hackathon, students will be paired up in groups and will learn how to col
                       </div>
                     ))}
                   </div>
-                  <a href='https://forms.gle/8fx7QGkHCzgWhPe16'> 
+                  <a href='https://forms.gle/HN9n6GdGxHYgxwjZ8'> 
                   <motion.button 
                     initial={{ scale: 0.9, opacity: 0 }}
                     whileInView={{ scale: 1, opacity: 1 }}
