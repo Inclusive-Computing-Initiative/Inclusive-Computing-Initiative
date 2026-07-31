@@ -31,8 +31,8 @@ const Hackathon = () => {
   const facts = [
     {
       icon: <Calendar className="w-5 h-5" />,
-      title: "July 19th",
-      detail: "10:15 AM – 1:15 PM",
+      title: "August 16th, 2026",
+      detail: "1:30 PM – 3:30 PM",
     },
     {
       icon: <Users className="w-5 h-5" />,
@@ -46,7 +46,7 @@ const Hackathon = () => {
     },
     {
       icon: <Utensils className="w-5 h-5" />,
-      title: "Lunch Included",
+      title: "Snacks Included",
       detail: "Dietary accommodations available",
     },
   ];
