@@ -108,7 +108,7 @@ const Hackathon = () => {
                 A hackathon for neurodivergent students to build something real — with a dedicated mentor, a small team, and no pressure to do it alone.
               </p>
 
-              <a href='https://docs.google.com/forms/d/e/1FAIpQLSe-LO2y5DlUMH8AdYq_6EbI_P-jUPdyU3ejtocqMG7Ri9rRJw/viewform?usp=header'>
+              <a href='https://docs.google.com/forms/d/e/1FAIpQLSeSQGHhggHl3k5g9-ZI_s4qFx5EVk4QPrCAwpyZcX3nTLI1DA/viewform'>
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -266,7 +266,7 @@ const Hackathon = () => {
                     ))}
                   </div>
 
-                  <a href='https://docs.google.com/forms/d/e/1FAIpQLSe-LO2y5DlUMH8AdYq_6EbI_P-jUPdyU3ejtocqMG7Ri9rRJw/viewform?usp=header'>
+                  <a href='https://docs.google.com/forms/d/e/1FAIpQLSeSQGHhggHl3k5g9-ZI_s4qFx5EVk4QPrCAwpyZcX3nTLI1DA/viewform'>
                     <button className="btn-primary text-lg px-8 py-4 mb-10">
                       Register for CodeTogether
                       <ArrowRight className="w-5 h-5" />
