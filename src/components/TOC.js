@@ -1,58 +1,106 @@
-import { Fade } from "react-reveal";
-import './TOC.css'
-
 const TOC = () => {
     return (
-        <>
-            <div className="toc-wrapper">
-                <div className='title-wrapper'>
-                    <div className="title" style={{position: "relative", width: "100vw", wordWrap: "break-word", backgroundColor: "transparent", fontWeight:"bold"}}>
-                        <Fade top>
-                            Privacy Policy                             
-                        </Fade>
-                    </div>
-                </div>
-                
-                <div className="text-wrap">
+        <div className="mx-auto max-w-3xl px-6 pb-24 pt-16">
+            <h1 className="text-center text-4xl font-extrabold text-ink sm:text-5xl">
+                Privacy Policy
+            </h1>
 
-Privacy Policy:  The Inclusive Computing Initiative takes very seriously and respects the privacy of personal information gathered from our supporters. This privacy policy was created to show our commitment to full transparency in how we collect and disseminate information about our donors and website visitors and how you can opt-out if you so choose.<br/>
+            <div className="mt-10 space-y-4 leading-relaxed text-ink-600">
+                <p>
+                    The Inclusive Computing Initiative takes very seriously and respects the
+                    privacy of personal information gathered from our supporters. This privacy
+                    policy was created to show our commitment to full transparency in how we
+                    collect and disseminate information about our donors and website visitors
+                    and how you can opt-out if you so choose.
+                </p>
 
-<br/>
-What Data We Collect: The Inclusive Computing Initiative collects personal information supplied to us voluntarily by supporters, volunteers, and visitors to our website. Whether signing up for a class, responding to a mailer, or subscribing for news and updates, The Inclusive Computing Initiative may ask you for personal contact information such as:<br/>
+                <p>
+                    <strong className="text-ink">What Data We Collect:</strong> The Inclusive
+                    Computing Initiative collects personal information supplied to us
+                    voluntarily by supporters, volunteers, and visitors to our website. Whether
+                    signing up for a class, responding to a mailer, or subscribing for news and
+                    updates, The Inclusive Computing Initiative may ask you for personal contact
+                    information such as:
+                </p>
 
-<br/>
-<ul>
-    <li>• Your first and last name</li>
-    <li>• Your phone number</li>
-    <li>• Your e-mail address</li>
-</ul>
-Technical data collected may include internet protocol address, browser type, operating system, and platform, as well as other technology on the devices used to access this site. Collected data may include your preferences in receiving marketing communications from us and our third-party partners.<br/>
+                <ul className="list-disc space-y-1 pl-6">
+                    <li>Your first and last name</li>
+                    <li>Your phone number</li>
+                    <li>Your e-mail address</li>
+                </ul>
 
-<br/>
-Signup Information: The Inclusive Computing Initiative maintains prospective student's and their respective parent/gaurdian's name, telephone numbers, email addresses, and concerns about their child.<br/>
+                <p>
+                    Technical data collected may include internet protocol address, browser
+                    type, operating system, and platform, as well as other technology on the
+                    devices used to access this site. Collected data may include your
+                    preferences in receiving marketing communications from us and our
+                    third-party partners.
+                </p>
 
-<br/>
-The Inclusive Computing Initiative DOES NOT collect any sensitive data about you such as race, ethnicity, religious beliefs, sexual orientation, or political affiliations, nor do we collect any information on your health or interactions with law enforcement.<br/>
+                <p>
+                    <strong className="text-ink">Signup Information:</strong> The Inclusive
+                    Computing Initiative maintains prospective students' and their respective
+                    parents'/guardians' names, telephone numbers, email addresses, and concerns
+                    about their child.
+                </p>
 
-<br/>
-How We Collect and Use Data: The Inclusive Computing Initiative uses automated technologies and third-party vendors to provide services on this website as well as offline activities. Information that you submit on this website or in response to our mailings may be provided to our vendors on a confidential basis to provide services that include: processing credit card transactions, maintaining our database, sending email messages, and facilitating fundraising activities on our behalf.<br/>
+                <p>
+                    The Inclusive Computing Initiative DOES NOT collect any sensitive data about
+                    you such as race, ethnicity, religious beliefs, sexual orientation, or
+                    political affiliations, nor do we collect any information on your health or
+                    interactions with law enforcement.
+                </p>
 
-<br/>
-How We Protect Your Data: We have added appropriate security measures to prevent your data from being accidentally lost, used, or accessed in an unauthorized way. We limit access to your data to those employees and third-party contractors to only those with a business need. They will only process your data on our instructions and are subject to confidentiality agreements.<br/>
+                <p>
+                    <strong className="text-ink">How We Collect and Use Data:</strong> The
+                    Inclusive Computing Initiative uses automated technologies and third-party
+                    vendors to provide services on this website as well as offline activities.
+                    Information that you submit on this website or in response to our mailings
+                    may be provided to our vendors on a confidential basis to provide services
+                    that include: processing credit card transactions, maintaining our database,
+                    sending email messages, and facilitating fundraising activities on our
+                    behalf.
+                </p>
 
-<br/>
-Third-Party Links: This website may include links to third-party websites, plug-ins, and applications. Clicking on those links or enabling those connections may allow third parties to collect or share data about you. We do not control these third-party websites and are not responsible for their privacy statements. When you leave our website, we recommend you read the privacy policy notice of each website you visit.<br/>
+                <p>
+                    <strong className="text-ink">How We Protect Your Data:</strong> We have
+                    added appropriate security measures to prevent your data from being
+                    accidentally lost, used, or accessed in an unauthorized way. We limit access
+                    to your data to those employees and third-party contractors to only those
+                    with a business need. They will only process your data on our instructions
+                    and are subject to confidentiality agreements.
+                </p>
 
-<br/>
-How to Opt-Out: If you wish to opt out of receiving future communications or to limit your information being shared by any of the methods described above, please contact The Inclusive Computing Initiative at <a href="mailto:inclusivecompute@gmail.com">inclusivecompute@gmail.com</a><br/>
+                <p>
+                    <strong className="text-ink">Third-Party Links:</strong> This website may
+                    include links to third-party websites, plug-ins, and applications. Clicking
+                    on those links or enabling those connections may allow third parties to
+                    collect or share data about you. We do not control these third-party
+                    websites and are not responsible for their privacy statements. When you
+                    leave our website, we recommend you read the privacy policy notice of each
+                    website you visit.
+                </p>
 
-<br/>
-Changes to Policy: We reserve the right to change this policy from time to time. When we do, we will note the last update at the top of this policy.<br/>
+                <p>
+                    <strong className="text-ink">How to Opt-Out:</strong> If you wish to opt out
+                    of receiving future communications or to limit your information being shared
+                    by any of the methods described above, please contact The Inclusive
+                    Computing Initiative at{' '}
+                    <a
+                        className="text-brand-700 underline underline-offset-2"
+                        href="mailto:inclusivecompute@gmail.com"
+                    >
+                        inclusivecompute@gmail.com
+                    </a>
+                </p>
 
-                </div>
-        
+                <p>
+                    <strong className="text-ink">Changes to Policy:</strong> We reserve the
+                    right to change this policy from time to time. When we do, we will note the
+                    last update at the top of this policy.
+                </p>
             </div>
-        </>
+        </div>
     )
 }
 

@@ -1,54 +1,103 @@
-import './Footer.css'
-import linkedinLogo from './LinkedIn_bw.png'
-import facebookLogo from './f_logo_bw.png'
-import instagramLogo from './instagram_bw.png'
-import { Link } from 'react-router-dom'
-import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
+import { Linkedin, Facebook, Instagram } from 'lucide-react';
+import Logo from './logo.png';
+
+const socials = [
+    { icon: Linkedin, href: 'https://www.linkedin.com/company/inclusive-computing-initiative', label: 'LinkedIn' },
+    { icon: Facebook, href: 'https://www.facebook.com/profile.php?id=100090126751545', label: 'Facebook' },
+    { icon: Instagram, href: 'https://www.instagram.com/inclusivecompute/', label: 'Instagram' },
+];
+
+const linkColumns = [
+    {
+        heading: 'Organization',
+        links: [
+            { label: 'About', to: '/about' },
+            { label: 'Classes', to: '/classes' },
+            { label: 'CodeTogether Hackathon', to: '/hackathon' },
+        ],
+    },
+    {
+        heading: 'Get Involved',
+        links: [
+            { label: 'Contact', to: '/contact' },
+            { label: 'Join Our Team', href: 'https://docs.google.com/forms/d/e/1FAIpQLScKCS9j1I5mUN_eq_LM85EYCaBOVxerIaRwwMQQgkMDbYC6uw/viewform' },
+            { label: 'Financials', href: 'https://hcb.hackclub.com/inclusive-computing-initiative/' },
+        ],
+    },
+    {
+        heading: 'Legal',
+        links: [
+            { label: 'Privacy Policy', to: '/privacy-policy' },
+        ],
+    },
+];
 
 const Footer = () => {
     return (
-        <>
+        <footer className="border-t border-ink/5 bg-white pt-14">
+            <div className="mx-auto max-w-6xl px-6">
+                <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_repeat(3,1fr)]">
+                    <div>
+                        <Link to="/" className="flex items-center gap-2">
+                            <img src={Logo} alt="" className="h-9 w-9" />
+                            <span className="font-bold text-ink">Inclusive Computing Initiative</span>
+                        </Link>
+                        <p className="mt-3 max-w-xs text-sm text-ink-400">
+                            Increasing access to computer science education for students with special needs.
+                        </p>
+                        <div className="mt-5 flex gap-3">
+                            {socials.map(({ icon: Icon, href, label }) => (
+                                <a
+                                    key={label}
+                                    href={href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label={label}
+                                    className="flex h-9 w-9 items-center justify-center rounded-full bg-ink/5 text-ink transition-colors hover:bg-brand-100 hover:text-brand-700"
+                                >
+                                    <Icon className="h-4 w-4" />
+                                </a>
+                            ))}
+                        </div>
+                    </div>
 
+                    {linkColumns.map((column) => (
+                        <div key={column.heading}>
+                            <h3 className="text-sm font-semibold uppercase tracking-wide text-ink-400">
+                                {column.heading}
+                            </h3>
+                            <ul className="mt-4 space-y-3">
+                                {column.links.map((link) => (
+                                    <li key={link.label}>
+                                        {link.to ? (
+                                            <Link to={link.to} className="text-sm font-medium text-ink hover:text-brand-700">
+                                                {link.label}
+                                            </Link>
+                                        ) : (
+                                            <a
+                                                href={link.href}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="text-sm font-medium text-ink hover:text-brand-700"
+                                            >
+                                                {link.label}
+                                            </a>
+                                        )}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    ))}
+                </div>
 
-        <div className="footer-wrapper">
-            <div className="footer-socials-row"> 
-                <a href='https://www.linkedin.com/company/inclusive-computing-initiative'> <img src={linkedinLogo} alt="LinkedIn"/> </a>
-                <a href='https://www.facebook.com/profile.php?id=100090126751545'> <img src={facebookLogo} alt="Facebook"/> </a>
-                <a href='https://www.instagram.com/inclusivecompute/'> <img src={instagramLogo} alt="Instagram"/> </a>
+                <div className="mt-12 border-t border-ink/5 py-6">
+                    <p className="text-sm text-ink-400">
+                        The Inclusive Computing Initiative is a 501(c)(3) nonprofit organization. EIN: 81-2908499
+                    </p>
+                </div>
             </div>
-            <div className="footer-links"> 
-                <Button as={Link} to="/privacy-policy" style={{background: 'transparent', border:'0px', padding: '0 0.5em'}} >
-                    <span style={{color: "black", margin: "0"}}>
-                        PRIVACY POLICY
-                    </span>
-                </Button>
-                <span style={{color: "black", margin: "0 0.5em"}}>&middot;</span>
-                <Button as={Link} to="https://docs.google.com/forms/d/e/1FAIpQLScKCS9j1I5mUN_eq_LM85EYCaBOVxerIaRwwMQQgkMDbYC6uw/viewform" style={{background: 'transparent', border:'0px', padding: '0 0.5em'}} >
-                    <span style={{color: "black", margin: "0"}}>
-                        JOIN OUR TEAM
-                    </span>
-                </Button>
-            </div>
-            <div className="footer-description">
-                <span style={{color: "black", margin: 0, display: 'block'}}> 
-                    The Inclusive Computing Initiative is a 501(c)(3) nonprofit organization.<br/>EIN: 81-2908499
-                </span>
-            </div>
-            <div className="footer-financials">
-                <a href="https://hcb.hackclub.com/inclusive-computing-initiative/"> Financials </a>
-            </div>
-            <div className="footer-location" style={{marginTop: '1vh'}}>
-                Allen, TX
-            </div>
-            <div className="footer-email">
-                <a style={{textDecoration:"none"}} href='mailto:inclusivecompute@gmail.com'> inclusivecompute@gmail.com </a>
-            </div>
-            <div className="footer-phone">
-                (586) 676-8033
-            </div>
-        </div>
-        
-        </>
+        </footer>
     )
 }
 

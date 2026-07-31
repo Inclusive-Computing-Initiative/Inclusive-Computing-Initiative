@@ -1,242 +1,68 @@
-import './AboutPage.css'
-import React from 'react';
-import { Fade } from 'react-reveal';
+import { motion } from 'framer-motion';
 import pic1 from './Picture1.jpg'
-import Brandon from './brandon.png'
-import Dacey from './dacey.png'
-import Leo from './leo.jpg' 
-import Joshua from './joshua.jpeg'
-import { Card } from 'react-bootstrap';
-
-const board = [
-	{
-		name: "Joshua Vigel",
-		title: "Executive Director | Founder",
-		picture:Joshua,
-	}, 
-	{
-		name: "Brandon Bedolla",
-		title: "Board Member",
-		picture:Brandon,
-	},
-	{
-		name: "Anish Choudhury",
-		title: "Board Member",
-	},
-	{
-		name: "Leo Silveira Martinez Goncalves",
-		title: "Chief Marketing Officer",	
-		picture:Leo,
-	},
-	{
-		name: "Tiffany Wang",
-		title: "Vice President",
-	},
-	{
-		name: "Dacey Yang",
-		title: "Director of Operations",
-	},
-
-	
-
-]
-
-const misc = [
-	{
-		name: "Matthew Price",
-		title: "VP of Marketing"
-	},
-	{
-		name: "Eileen Gin",
-		title: "Officer"
-	},
-	{
-		name: "Jayadeep Velagapudi",
-		title: "Teaching Director"
-	},
-	{
-		name: "Rishi N",
-		title: "Teacher"
-	},
-]
-
-const devs = [
-	{
-		name: "Lucas Wu",
-		title: "AI Developer"
-	},
-	{
-		name: "Pranav Balamurali",
-		title: "AI Developer"
-	},
-	{
-		name: "Abhirama Sonny",
-		title: "AI Developer"
-	},
-	{
-		name: "Kashika Khurana",
-		title: "AI Developer"
-	},
-]
-
-const chapters = [
-	{
-		name: "Immanuel Moses",
-		title: "Michigan Regional Chapter Lead"
-	},
-	{
-		name: "Aryan Sinha",
-		title: "Rochester MI Co-president"
-	},
-	{
-		name: "Aaradhya",
-		title: "Walnut Grove Co-president"
-	},
-	{
-		name: "Angela Wok",
-		title: "Fremont Regional President"
-	},
-	{
-		name: "Ansh",
-		title: "Rochester MI Co-president"
-	},
-	{
-		name: "Athindra",
-		title: "Walnut Grove Co-president"
-	},
-	{
-		name: "Harshita Kharbanda",
-		title: "Frisco TX Co-president"
-	},
-	{
-		name: "Ria Sood",
-		title: "Frisco TX Co-president"
-	},
-	{
-		name: "Tanya Verma",
-		title: "Frisco TX Co-president"
-	},
-	{
-		name: "Vishal Vinjamuri",
-		title: "Frisco TX Co-president"
-	},
-	{
-		name: "Vishy",
-		title: "Frisco TX Co-president"
-	}
-]
 
 const AboutPage = () => {
-    
+
     return (
-        <div className='page-wrapper'>
+        <div className="mx-auto max-w-6xl px-6 pb-24 pt-16">
+            <motion.h1
+                initial={{ opacity: 0, y: 24 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                className="text-center text-4xl font-extrabold text-ink sm:text-5xl"
+            >
+                Our Mission
+            </motion.h1>
 
-            <div className='title-wrapper'>
-                <div className="title" style={{position: "relative", width: "100vw", wordWrap: "break-word", backgroundColor: "transparent", fontWeight:"bold"}}>
-                    <Fade top>
-                        Our Mission                                
-                    </Fade>
-                </div>
-            </div>
+            <motion.p
+                initial={{ opacity: 0, y: 24 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.15 }}
+                className="mx-auto mt-8 max-w-3xl text-center text-lg leading-relaxed text-ink-600"
+            >
+                Between 2016 and 2019,{' '}
+                <a
+                    className="text-brand-700 underline underline-offset-2"
+                    href="https://www.cdc.gov/ncbddd/adhd/data.html"
+                >
+                    approximately 6 million children ages 3-17
+                </a>{' '}
+                were diagnosed with ADHD, one of many mental health challenges affecting children
+                today. In the past, such issues were often overlooked, but in our modern world,
+                they demand our attention. Too many children with special needs still face
+                unequal access to quality education and opportunities. Our mission is to change
+                that: to ensure that <strong>every</strong> child, regardless of their
+                circumstances, has the support they need to learn, grow, and create to their
+                fullest potential.
+            </motion.p>
 
-            <Fade delay = {200}>
-                <div className='mission-statement'>
-                    <p> Between 2016 and 2019, <a href='https://www.cdc.gov/ncbddd/adhd/data.html'>approximately 6 million children ages 3-17</a> diagnosed with ADHD, one of many mental health challenges affecting children today.In the past, such issues were often overlooked, but in our modern world, they demand our attention. Too many children with special needs still face unequal access to quality education and opportunities. Our mission is to change that: to ensure that <strong>every</strong> child, regardless of their circumstances, has the support they need to learn, grow, and create to their fullest potential.
+            <div className="mt-20 grid gap-10 lg:grid-cols-2 lg:items-center">
+                <motion.div
+                    initial={{ opacity: 0, y: 24 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                >
+                    <h2 className="text-3xl font-bold text-ink">What we do</h2>
+                    <p className="mt-4 text-lg leading-relaxed text-ink-600">
+                        We host weekly classes on topics in STEM for students with special needs.
+                        We believe that every student learns differently, and by adapting to
+                        every student's individual needs, we can create successful education.
                     </p>
-                </div>
-            </Fade>
-    
+                </motion.div>
 
-            <div className='what-we-do' style={{display: 'flex', marginBottom:'30vh'}}>
-                <div className='left' style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
-                    <div className="title" style={{position: "relative", wordWrap: "break-word", backgroundColor: "transparent", fontWeight:"bold"}}>
-                        <Fade left>
-                            What we do                                
-                        </Fade>
-                    </div>
-                    
-                    <div className='description'> 
-                        <p> 
-                            We host weekly classes on topics in STEM for student with special needs. We believe that every student learns differently, and by adapting to every student's individual needs, we can create successful education. 
-                        </p> 
-                    </div>
-                </div>
-
-                <div className='picture'> 
-                    <div className="title" style={{position: "relative", wordWrap: "break-word", backgroundColor: "transparent", fontWeight:"bold"}}>
-                        <Fade left>
-                            <div className='image'> 
-                                <img style={{borderRadius:"40px"}} src={pic1}/> 
-                            </div> 
-						</Fade>
-                    </div>
-				</div>
-
+                <motion.img
+                    initial={{ opacity: 0, y: 24 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6, delay: 0.1 }}
+                    src={pic1}
+                    alt="Students in one of our classes"
+                    className="w-full rounded-card object-cover shadow-md"
+                />
             </div>
 
-		{//			<div className='title' style={{fontWeight:'bold', marginBottom:"50px"}}> Our Team </div>
-		//	<div className='members' style={{width:"70vw", display:'flex', flexDirection:'row', justifyContent:'space-evenly', alignItems:'center', flexWrap:'wrap'}}>
-	//				{
-	//					board.map(member => {
-	//						return <> 
-	//								<Card style={{width: 'max-content', margin:'20px'}}>
-	//									<Card.Body> 
-	//										<Card.Title> {member.title} </Card.Title>
-	//										<Card.Text> {member.name} </Card.Text>
-	//									</Card.Body>
-	//								</Card> 
-	//							</>
-	//					})	
-	//				}	
-	//				<div style={{width:'80vw', height:'1px', border:'1px solid grey', margin:'40px'}}/>
-	//	
-	//				{
-	//					devs.map(member => {
-	//						return <> 
-	//								<Card style={{width: 'max-content', margin:'20px'}}>
-	//									<Card.Body> 
-	//										<Card.Title> {member.title} </Card.Title>
-	//										<Card.Text> {member.name} </Card.Text>
-	//									</Card.Body>
-	//								</Card> 
-	//							</>
-	//					})	
-	//				}	
-	//				<div style={{width:'80vw', height:'1px', border:'1px solid grey', margin:'40px'}}/>
-
-	//				{
-	//					chapters.map(member => {
-	//						return <> 
-	//								<Card style={{width: 'max-content', margin:'20px'}}>
-	//									<Card.Body> 
-	//										<Card.Title> {member.title} </Card.Title>
-	//										<Card.Text> {member.name} </Card.Text>
-	//									</Card.Body>
-	//								</Card> 
-	//							</>
-	//					})	
-	//				}	
-	//				<div style={{width:'80vw', height:'1px', border:'1px solid grey', margin:'40px'}}/>
-	//				{
-	//					misc.map(member => {
-	//						return <> 
-	//								<Card style={{width: 'max-content', margin:'20px'}}>
-	//									<Card.Body> 
-	//										<Card.Title> {member.title} </Card.Title>
-	//										<Card.Text> {member.name} </Card.Text>
-	//									</Card.Body>
-	//								</Card> 
-	//							</>
-	//					})	
-	//				}	
-
-	//				<div style={{width:'80vw', height:'1px', border:'1px solid grey', margin:'40px'}}/>
-	//			</div>
-		}
-
-
-		</div>
-
+        </div>
     )
 }
 

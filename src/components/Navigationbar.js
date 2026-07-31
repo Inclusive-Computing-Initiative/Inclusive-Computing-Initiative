@@ -1,38 +1,74 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import Button  from 'react-bootstrap/Button';
-import Logo from './logo.png'
-import { Outlet, Link } from "react-router-dom";
-import './Navigationbar.css'
+import { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
+import { Menu, X } from 'lucide-react';
+import Logo from './logo.png';
+
+const links = [
+  { to: '/', label: 'Home' },
+  { to: '/about', label: 'About' },
+  { to: '/classes', label: 'Classes' },
+  { to: '/hackathon', label: 'CodeTogether Hackathon' },
+  { to: '/contact', label: 'Contact' },
+];
 
 function Navigationbar() {
+  const [open, setOpen] = useState(false);
+
   return (
-    <>
-    <Navbar expand="lg" bg="custom" style = {{zIndex:"100"}}>
-   <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-        <Navbar.Brand>
-            <Link to="/" style={{ textDecoration: 'none' }}>
-                <img src={Logo} height="60vh" width="60vh" style={{margin: "0", marginRight: "1vw"}}/>
-            </Link>
-        </Navbar.Brand>
-        
-        <Container fluid style={{}}>
-      <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto my-2 my-lg-0">
-              <Nav.Link as = {Link} to = {"/"} className = "px-5"> <p className='link'> Home </p> </Nav.Link>
-              <Nav.Link as = {Link} to = {"/about"} className = "px-5"> <p className='link'> About </p> </Nav.Link>
-              <Nav.Link as = {Link} to = {"/classes"} className = "px-5"> <p className='link'> Classes </p> </Nav.Link>
-              <Nav.Link as = {Link} to = {"/hackathon"} className = "px-5"> <p className='link'> Our Newest Event... </p> </Nav.Link>
-            </Nav>
+    <header className="sticky top-0 z-50 border-b border-ink/5 bg-cream/90 backdrop-blur">
+      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
+        <Link to="/" className="flex items-center" onClick={() => setOpen(false)}>
+          <img src={Logo} alt="Inclusive Computing Initiative" className="h-12 w-12" />
+        </Link>
 
-      { // <Button variant="outline-success" style={{width: "7vw", marginRight: "1vw"}} href="https://forms.gle/E4NAW9CaYjqUnMsq7"> Apply! </Button> 
-      }
-      </Navbar.Collapse>
-          </Container>
-      </Navbar>
+        <ul className="hidden items-center gap-1 lg:flex">
+          {links.map((link) => (
+            <li key={link.to}>
+              <NavLink
+                to={link.to}
+                className={({ isActive }) =>
+                  `rounded-full px-4 py-2 text-sm font-semibold transition-colors ${
+                    isActive ? 'bg-brand-100 text-brand-700' : 'text-ink hover:bg-ink/5'
+                  }`
+                }
+              >
+                {link.label}
+              </NavLink>
+            </li>
+          ))}
+        </ul>
 
-      </>
+        <button
+          type="button"
+          className="rounded-full p-2 text-ink hover:bg-ink/5 lg:hidden"
+          aria-label={open ? 'Close menu' : 'Open menu'}
+          aria-expanded={open}
+          onClick={() => setOpen((v) => !v)}
+        >
+          {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+        </button>
+      </nav>
+
+      {open && (
+        <ul className="flex flex-col gap-1 border-t border-ink/5 px-6 pb-4 pt-2 lg:hidden">
+          {links.map((link) => (
+            <li key={link.to}>
+              <NavLink
+                to={link.to}
+                onClick={() => setOpen(false)}
+                className={({ isActive }) =>
+                  `block rounded-card px-4 py-3 text-base font-semibold transition-colors ${
+                    isActive ? 'bg-brand-100 text-brand-700' : 'text-ink hover:bg-ink/5'
+                  }`
+                }
+              >
+                {link.label}
+              </NavLink>
+            </li>
+          ))}
+        </ul>
+      )}
+    </header>
   );
 }
 
