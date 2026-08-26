@@ -143,7 +143,7 @@ const TeamPage = () => {
                 transition={{ duration: 0.6 }}
                 className="text-center text-4xl font-extrabold text-ink sm:text-5xl"
             >
-                Our Team
+                Meet the Team
             </motion.h1>
 
             <motion.p

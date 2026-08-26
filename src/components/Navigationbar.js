@@ -18,8 +18,11 @@ function Navigationbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-ink/5 bg-cream/90 backdrop-blur">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
-        <Link to="/" className="flex items-center" onClick={() => setOpen(false)}>
-          <img src={Logo} alt="Inclusive Computing Initiative" className="h-12 w-12" />
+        <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
+          <img src={Logo} alt="" className="h-12 w-12" />
+          <span className="hidden text-lg font-bold text-ink sm:inline">
+            Inclusive Computing Initiative
+          </span>
         </Link>
 
         <ul className="hidden items-center gap-1 lg:flex">
