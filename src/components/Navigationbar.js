@@ -8,6 +8,7 @@ const links = [
   { to: '/about', label: 'About' },
   { to: '/classes', label: 'Classes' },
   { to: '/hackathon', label: 'CodeTogether Hackathon' },
+  { to: '/team', label: 'Team' },
   { to: '/contact', label: 'Contact' },
 ];
 

@@ -17,14 +17,14 @@ const methods = [
     {
         icon: Instagram,
         label: 'Instagram',
-        value: '@inclusivecompute',
-        href: 'https://www.instagram.com/inclusivecompute/',
+        value: '@inclusivecomputing',
+        href: 'https://www.instagram.com/inclusivecomputing/',
     },
     {
         icon: Linkedin,
         label: 'LinkedIn',
         value: 'Inclusive Computing Initiative',
-        href: 'https://www.linkedin.com/company/96099560/admin/feed/posts/',
+        href: 'https://www.linkedin.com/company/inclusive-computing-initiative/',
     },
 ];
 

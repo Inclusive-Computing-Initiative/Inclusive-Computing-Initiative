@@ -3,9 +3,9 @@ import { Linkedin, Facebook, Instagram } from 'lucide-react';
 import Logo from './logo.png';
 
 const socials = [
-    { icon: Linkedin, href: 'https://www.linkedin.com/company/inclusive-computing-initiative', label: 'LinkedIn' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/company/inclusive-computing-initiative/', label: 'LinkedIn' },
     { icon: Facebook, href: 'https://www.facebook.com/profile.php?id=100090126751545', label: 'Facebook' },
-    { icon: Instagram, href: 'https://www.instagram.com/inclusivecompute/', label: 'Instagram' },
+    { icon: Instagram, href: 'https://www.instagram.com/inclusivecomputing/', label: 'Instagram' },
 ];
 
 const linkColumns = [
@@ -15,6 +15,7 @@ const linkColumns = [
             { label: 'About', to: '/about' },
             { label: 'Classes', to: '/classes' },
             { label: 'CodeTogether Hackathon', to: '/hackathon' },
+            { label: 'Team', to: '/team' },
         ],
     },
     {
