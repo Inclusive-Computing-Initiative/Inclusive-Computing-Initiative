@@ -1,0 +1,1 @@
+{"nodes": [{"id": "public_index_html", "label": "index.html (Template)", "file_type": "code", "source_file": "public/index.html"}], "edges": [{"source": "public_index_html", "target": "public_apple_touch_icon_png", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "public/index.html"}], "hyperedges": []}
