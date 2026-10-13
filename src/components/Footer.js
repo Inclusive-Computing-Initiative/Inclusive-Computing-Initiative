@@ -23,7 +23,7 @@ const linkColumns = [
         links: [
             { label: 'Contact', to: '/contact' },
             { label: 'Join Our Team', href: 'https://docs.google.com/forms/d/e/1FAIpQLScKCS9j1I5mUN_eq_LM85EYCaBOVxerIaRwwMQQgkMDbYC6uw/viewform' },
-            { label: 'Financials', href: 'https://hcb.hackclub.com/inclusive-computing-initiative/' },
+            { label: 'Financials' },
         ],
     },
     {
@@ -75,6 +75,8 @@ const Footer = () => {
                                             <Link to={link.to} className="text-sm font-medium text-ink hover:text-brand-700">
                                                 {link.label}
                                             </Link>
+                                        ) : !link.href ? (
+                                            <span className="text-sm font-medium text-ink">{link.label}</span>
                                         ) : (
                                             <a
                                                 href={link.href}
