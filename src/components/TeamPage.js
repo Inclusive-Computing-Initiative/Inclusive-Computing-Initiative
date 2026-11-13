@@ -174,7 +174,7 @@ const TeamPage = () => {
             </div>
 
             <div className="mt-16">
-                <span className="section-eyebrow">Board Members</span>
+                <span className="section-eyebrow">Co-presidents</span>
                 <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     {boardMembers.map((member, i) => (
                         <TeamCard key={member.name} member={member} i={i} />
