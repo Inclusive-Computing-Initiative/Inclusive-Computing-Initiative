@@ -29,7 +29,7 @@ const photoAdjust = {
     brandon: { size: 128, posX: 50, posY: 0, zoom: 1, naturalWidth: 1936, naturalHeight: 2383 },
     yajat: { size: 128, posX: 50, posY: 20, zoom: 1, naturalWidth: 3685, naturalHeight: 5159 },
     kashika: { size: 128, posX: 50, posY: 50, zoom: 1, naturalWidth: 800, naturalHeight: 800 },
-    naajiyah: { size: 128, posX: 55, posY: 65, zoom: 1.7, naturalWidth: 1944, naturalHeight: 2592 },
+    naajiyah: { size: 128, posX: 49, posY: 26, zoom: 1.7, naturalWidth: 1170, naturalHeight: 1956 },
 };
 
 const founders = [
@@ -54,7 +54,7 @@ const founders = [
 const boardMembers = [
     {
         name: 'Yajat Parmar',
-        role: 'Board Member',
+        role: 'Co-president',
         image: YajatImage,
         adjust: photoAdjust.yajat,
         email: 'yajat.parmar@inclusivecompute.org',
@@ -62,7 +62,7 @@ const boardMembers = [
     },
     {
         name: 'Kashika Khurana',
-        role: 'Board Member',
+        role: 'Co-president',
         image: KashikaImage,
         adjust: photoAdjust.kashika,
         email: 'kashika@inclusivecompute.org',
@@ -70,7 +70,7 @@ const boardMembers = [
     },
     {
         name: 'Naajiyah Malik',
-        role: 'Board Member',
+        role: 'Co-president',
         image: NaajiyahImage,
         adjust: photoAdjust.naajiyah,
         email: 'naajiyah@inclusivecompute.org',
